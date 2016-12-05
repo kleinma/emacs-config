@@ -1,7 +1,0 @@
-<launch>
-  <node pkg="snowmower_mapping" type="mapper" name="mapper" output="screen">
-    <param name="base_frame" value="base_link" type="string"/>
-    <param name="map_frame" value="map" type="string"/>
-    <param name="radius" value="0.5" type="double"/>
-  </node>
-</launch>

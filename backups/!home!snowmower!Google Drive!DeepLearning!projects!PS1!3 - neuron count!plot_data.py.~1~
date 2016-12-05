@@ -1,5 +1,0 @@
-plt.figure(0)
-for x in xrange(rn.N):
-    for y in xrange(rn.N):
-        plt.subplot(N,1,x)
-        plt.plot(rn.time[:,0,7],rn.test[:,0,7],label="h1="+str(rn.hidden_neurons[x])+",h2="+str(rn.hidden_neurons[y]))

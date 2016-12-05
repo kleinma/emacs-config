@@ -1,6 +1,0 @@
-<launch>
-   <node pkg="tf" type="static_transform_publisher" name="wp0_broadcaster" args="0 10 0 0 0 0 0 odom wp0 100" />
-   <node pkg="tf" type="static_transform_publisher" name="wp1_broadcaster" args="2 10 0 0 0 0 0 odom wp1 100" />
-   <node pkg="tf" type="static_transform_publisher" name="wp2_broadcaster" args="2 0 0 0 0 0 0 odom wp2 100" />
-   <node pkg="tf" type="static_transform_publisher" name="wp3_broadcaster" args="0 0 0 0 0 0 0 odom wp3 100" />
-</launch>
