@@ -1,0 +1,5 @@
+backups/
+semanticdb/
+projectile.cache
+projectile-bookmarks.eld
+srecode-map.el
