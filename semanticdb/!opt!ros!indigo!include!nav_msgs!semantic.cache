@@ -1,0 +1,136 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("NAV_MSGS_MESSAGE_ODOMETRY_H" variable (:constant-flag t) nil [118 145])
+            ("string" include (:system-flag t) nil [148 165])
+            ("vector" include (:system-flag t) nil [166 183])
+            ("map" include (:system-flag t) nil [184 198])
+            ("ros/types.h" include (:system-flag t) nil [200 222])
+            ("ros/serialization.h" include (:system-flag t) nil [223 253])
+            ("ros/builtin_message_traits.h" include (:system-flag t) nil [254 293])
+            ("ros/message_operations.h" include (:system-flag t) nil [294 329])
+            ("std_msgs/Header.h" include (:system-flag t) nil [331 359])
+            ("geometry_msgs/PoseWithCovariance.h" include (:system-flag t) nil [360 405])
+            ("geometry_msgs/TwistWithCovariance.h" include (:system-flag t) nil [406 452])
+            ("nav_msgs" type
+               (:members 
+                  ( ("Odometry_" type
+                       (:template 
+                          ( ("ContainerAllocator" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("Type" type
+                               (:typedef ("Odometry_" type
+                                     (:template-specifier 
+                                        ( ("ContainerAllocator" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [532 575])
+                            ("Odometry_" function
+                               (:constructor-flag t
+                                :type ("Odometry_" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [579 664])
+                            ("Odometry_" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_alloc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ContainerAllocator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [677 710]))                                  
+                                :type ("Odometry_" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [667 824])
+                            ("_header_type" variable (:type ("std_msgs::Header_" type
+                                 (:template-specifier 
+                                    ( ("ContainerAllocator" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [842 894])
+                            ("header" variable (:type ("_header_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [897 917])
+                            ("_child_frame_id_type" variable (:type "int") (reparse-symbol classsubparts) [1039 1060])
+                            ("child_frame_id" variable (:type ("_child_frame_id_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1063 1099])
+                            ("_pose_type" variable (:type ("geometry_msgs::PoseWithCovariance_" type
+                                 (:template-specifier 
+                                    ( ("ContainerAllocator" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1115 1182])
+                            ("pose" variable (:type ("_pose_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1185 1201])
+                            ("_twist_type" variable (:type ("geometry_msgs::TwistWithCovariance_" type
+                                 (:template-specifier 
+                                    ( ("ContainerAllocator" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1217 1286])
+                            ("twist" variable (:type ("_twist_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1289 1307])
+                            ("Ptr" variable (:type "int") (reparse-symbol classsubparts) [1385 1389])
+                            ("ConstPtr" variable (:type "int") (reparse-symbol classsubparts) [1468 1477]))                          )
+                        (reparse-symbol namespacesubparts) [475 1481])
+                    ("Odometry" variable (:type ("nav_msgs::Odometry_" type
+                         (:template-specifier 
+                            ( ("std::allocator" type (:template-specifier 
+                                ( ("void" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1513 1565])
+                    ("OdometryPtr" variable (:type "int") (reparse-symbol namespacesubparts) [1617 1629])
+                    ("OdometryConstPtr" variable (:type "int") (reparse-symbol namespacesubparts) [1685 1702])
+                    ("<<" function
+                       (:template 
+                          ( ("ContainerAllocator" type (:type "class") nil nil))                          
+                        :type ("std::ostream" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1816 1832])
+                            ("v" variable
+                               (:reference 1
+                                :type ("nav_msgs::Odometry_" type
+                                     (:template-specifier 
+                                        ( ("ContainerAllocator" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1841 1885]))                          
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1753 1996]))                  
+                :type "namespace")
+                nil [454 1999])
+            ("ros" type
+               (:members 
+                  ( ("message_traits" type
+                       (:members 
+                          ( ("FalseType" variable (:type "int") (reparse-symbol namespacesubparts) [3058 3074])
+                            ("FalseType" variable (:type "int") (reparse-symbol namespacesubparts) [3185 3201])
+                            ("TrueType" variable (:type "int") (reparse-symbol namespacesubparts) [3305 3320])
+                            ("TrueType" variable (:type "int") (reparse-symbol namespacesubparts) [3429 3444])
+                            ("TrueType" variable (:type "int") (reparse-symbol namespacesubparts) [3548 3563])
+                            ("TrueType" variable (:type "int") (reparse-symbol namespacesubparts) [3672 3687]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2039 8202]))                  
+                :type "namespace")
+                nil [2023 8232])
+            ("ros" type
+               (:members 
+                  ( ("serialization" type (:type "namespace") (reparse-symbol namespacesubparts) [8267 8686]))                  
+                :type "namespace")
+                nil [8251 8715])
+            ("ros" type
+               (:members 
+                  ( ("message_operations" type (:type "namespace") (reparse-symbol namespacesubparts) [8750 9693]))                  
+                :type "namespace")
+                nil [8734 9727]))          
+      :file "Odometry.h"
+      :pointmax 9784
+      :fsize 9783
+      :lastmodtime '(22385 49473 0 0)
+      :unmatched-syntax '((punctuation 9689 . 9690) (semantic-list 8877 . 9689) (punctuation 8875 . 8876) (punctuation 8873 . 8874) (symbol 8855 . 8873) (punctuation 8854 . 8855) (symbol 8845 . 8854) (punctuation 8844 . 8845) (punctuation 8843 . 8844) (symbol 8835 . 8843) (punctuation 8834 . 8835) (punctuation 8833 . 8834) (punctuation 8831 . 8832) (symbol 8824 . 8831) (STRUCT 8817 . 8823) (punctuation 8815 . 8816) (symbol 8797 . 8815) (CLASS 8791 . 8796) (punctuation 8790 . 8791) (TEMPLATE 8782 . 8790) (punctuation 8662 . 8663) (semantic-list 8396 . 8662) (punctuation 8392 . 8393) (punctuation 8390 . 8391) (symbol 8372 . 8390) (punctuation 8371 . 8372) (symbol 8362 . 8371) (punctuation 8361 . 8362) (punctuation 8360 . 8361) (symbol 8352 . 8360) (punctuation 8351 . 8352) (punctuation 8350 . 8351) (punctuation 8348 . 8349) (symbol 8338 . 8348) (STRUCT 8331 . 8337) (punctuation 8329 . 8330) (symbol 8311 . 8329) (CLASS 8305 . 8310) (punctuation 8304 . 8305) (TEMPLATE 8296 . 8304) (punctuation 8198 . 8199) (semantic-list 4465 . 8198) (punctuation 4463 . 4464) (punctuation 4461 . 4462) (symbol 4443 . 4461) (punctuation 4442 . 4443) (symbol 4433 . 4442) (punctuation 4432 . 4433) (punctuation 4431 . 4432) (symbol 4423 . 4431) (punctuation 4422 . 4423) (punctuation 4421 . 4422) (punctuation 4419 . 4420) (symbol 4409 . 4419) (STRUCT 4402 . 4408) (punctuation 4400 . 4401) (symbol 4382 . 4400) (CLASS 4376 . 4381) (punctuation 4375 . 4376) (TEMPLATE 4367 . 4375) (punctuation 4364 . 4365) (semantic-list 4194 . 4364) (punctuation 4192 . 4193) (punctuation 4190 . 4191) (symbol 4172 . 4190) (punctuation 4171 . 4172) (symbol 4162 . 4171) (punctuation 4161 . 4162) (punctuation 4160 . 4161) (symbol 4152 . 4160) (punctuation 4151 . 4152) (punctuation 4150 . 4151) (punctuation 4148 . 4149) (symbol 4140 . 4148) (STRUCT 4133 . 4139) (punctuation 4131 . 4132) (symbol 4113 . 4131) (CLASS 4107 . 4112) (punctuation 4106 . 4107) (TEMPLATE 4098 . 4106) (punctuation 4095 . 4096) (semantic-list 3784 . 4095) (punctuation 3782 . 3783) (punctuation 3780 . 3781) (symbol 3762 . 3780) (punctuation 3761 . 3762) (symbol 3752 . 3761) (punctuation 3751 . 3752) (punctuation 3750 . 3751) (symbol 3742 . 3750) (punctuation 3741 . 3742) (punctuation 3740 . 3741) (punctuation 3738 . 3739) (symbol 3732 . 3738) (STRUCT 3725 . 3731) (punctuation 3723 . 3724) (symbol 3705 . 3723) (CLASS 3699 . 3704) (punctuation 3698 . 3699) (TEMPLATE 3690 . 3698) (punctuation 3670 . 3671) (punctuation 3666 . 3667) (CONST 3661 . 3666) (punctuation 3659 . 3660) (symbol 3641 . 3659) (punctuation 3640 . 3641) (symbol 3631 . 3640) (punctuation 3630 . 3631) (punctuation 3629 . 3630) (symbol 3621 . 3629) (punctuation 3620 . 3621) (punctuation 3619 . 3620) (punctuation 3617 . 3618) (symbol 3608 . 3617) (STRUCT 3601 . 3607) (punctuation 3599 . 3600) (symbol 3581 . 3599) (CLASS 3575 . 3580) (punctuation 3574 . 3575) (TEMPLATE 3565 . 3573) (punctuation 3546 . 3547) (punctuation 3542 . 3543) (punctuation 3540 . 3541) (symbol 3522 . 3540) (punctuation 3521 . 3522) (symbol 3512 . 3521) (punctuation 3511 . 3512) (punctuation 3510 . 3511) (symbol 3502 . 3510) (punctuation 3501 . 3502) (punctuation 3500 . 3501) (punctuation 3498 . 3499) (symbol 3489 . 3498) (STRUCT 3482 . 3488) (punctuation 3480 . 3481) (symbol 3462 . 3480) (CLASS 3456 . 3461) (punctuation 3455 . 3456) (TEMPLATE 3446 . 3454) (punctuation 3427 . 3428) (punctuation 3423 . 3424) (CONST 3418 . 3423) (punctuation 3416 . 3417) (symbol 3398 . 3416) (punctuation 3397 . 3398) (symbol 3388 . 3397) (punctuation 3387 . 3388) (punctuation 3386 . 3387) (symbol 3378 . 3386) (punctuation 3377 . 3378) (punctuation 3376 . 3377) (punctuation 3374 . 3375) (symbol 3365 . 3374) (STRUCT 3358 . 3364) (punctuation 3356 . 3357) (symbol 3338 . 3356) (CLASS 3332 . 3337) (punctuation 3331 . 3332) (TEMPLATE 3322 . 3330) (punctuation 3303 . 3304) (punctuation 3299 . 3300) (punctuation 3297 . 3298) (symbol 3279 . 3297) (punctuation 3278 . 3279) (symbol 3269 . 3278) (punctuation 3268 . 3269) (punctuation 3267 . 3268) (symbol 3259 . 3267) (punctuation 3258 . 3259) (punctuation 3257 . 3258) (punctuation 3255 . 3256) (symbol 3246 . 3255) (STRUCT 3239 . 3245) (punctuation 3237 . 3238) (symbol 3219 . 3237) (CLASS 3213 . 3218) (punctuation 3212 . 3213) (TEMPLATE 3203 . 3211) (punctuation 3183 . 3184) (punctuation 3179 . 3180) (CONST 3174 . 3179) (punctuation 3172 . 3173) (symbol 3154 . 3172) (punctuation 3153 . 3154) (symbol 3144 . 3153) (punctuation 3143 . 3144) (punctuation 3142 . 3143) (symbol 3134 . 3142) (punctuation 3133 . 3134) (punctuation 3132 . 3133) (punctuation 3130 . 3131) (symbol 3119 . 3130) (STRUCT 3112 . 3118) (punctuation 3110 . 3111) (symbol 3092 . 3110) (CLASS 3086 . 3091) (punctuation 3085 . 3086) (TEMPLATE 3076 . 3084) (punctuation 3056 . 3057) (punctuation 3052 . 3053) (punctuation 3050 . 3051) (symbol 3032 . 3050) (punctuation 3031 . 3032) (symbol 3022 . 3031) (punctuation 3021 . 3022) (punctuation 3020 . 3021) (symbol 3012 . 3020) (punctuation 3011 . 3012) (punctuation 3010 . 3011) (punctuation 3008 . 3009) (symbol 2997 . 3008) (STRUCT 2990 . 2996) (punctuation 2988 . 2989) (symbol 2970 . 2988) (CLASS 2964 . 2969) (punctuation 2963 . 2964) (TEMPLATE 2954 . 2962) (punctuation 1840 . 1841) (punctuation 1839 . 1840) (CONST 1833 . 1838) (punctuation 1683 . 1684) (CONST 1678 . 1683) (symbol 1669 . 1677) (punctuation 1668 . 1669) (punctuation 1667 . 1668) (symbol 1659 . 1667) (punctuation 1658 . 1659) (punctuation 1657 . 1658) (punctuation 1655 . 1656) (symbol 1645 . 1655) (punctuation 1644 . 1645) (punctuation 1643 . 1644) (symbol 1638 . 1643) (TYPEDEF 1630 . 1637) (punctuation 1615 . 1616) (symbol 1606 . 1614) (punctuation 1605 . 1606) (punctuation 1604 . 1605) (symbol 1596 . 1604) (punctuation 1595 . 1596) (punctuation 1594 . 1595) (punctuation 1592 . 1593) (symbol 1582 . 1592) (punctuation 1581 . 1582) (punctuation 1580 . 1581) (symbol 1575 . 1580) (TYPEDEF 1567 . 1574) (punctuation 1512 . 1513) (punctuation 1511 . 1512) (TYPEDEF 1503 . 1510) (punctuation 1466 . 1467) (CONST 1461 . 1466) (punctuation 1459 . 1460) (symbol 1441 . 1459) (punctuation 1440 . 1441) (symbol 1431 . 1440) (punctuation 1430 . 1431) (punctuation 1429 . 1430) (symbol 1421 . 1429) (punctuation 1420 . 1421) (punctuation 1419 . 1420) (punctuation 1417 . 1418) (symbol 1407 . 1417) (punctuation 1406 . 1407) (punctuation 1405 . 1406) (symbol 1400 . 1405) (TYPEDEF 1392 . 1399) (punctuation 1383 . 1384) (punctuation 1381 . 1382) (symbol 1363 . 1381) (punctuation 1362 . 1363) (symbol 1353 . 1362) (punctuation 1352 . 1353) (punctuation 1351 . 1352) (symbol 1343 . 1351) (punctuation 1342 . 1343) (punctuation 1341 . 1342) (punctuation 1339 . 1340) (symbol 1329 . 1339) (punctuation 1328 . 1329) (punctuation 1327 . 1328) (symbol 1322 . 1327) (TYPEDEF 1314 . 1321) (punctuation 1216 . 1217) (punctuation 1215 . 1216) (TYPEDEF 1206 . 1213) (punctuation 1114 . 1115) (punctuation 1113 . 1114) (TYPEDEF 1104 . 1111) (punctuation 1036 . 1037) (symbol 1030 . 1035) (punctuation 1029 . 1030) (punctuation 1028 . 1029) (punctuation 1027 . 1028) (CHAR 1023 . 1027) (punctuation 1022 . 1023) (symbol 1016 . 1022) (TEMPLATE 1007 . 1015) (punctuation 1006 . 1007) (punctuation 1005 . 1006) (symbol 987 . 1005) (TYPENAME 978 . 986) (punctuation 976 . 977) (punctuation 975 . 976) (CHAR 971 . 975) (punctuation 970 . 971) (symbol 959 . 970) (punctuation 958 . 959) (punctuation 957 . 958) (symbol 954 . 957) (punctuation 952 . 953) (CHAR 948 . 952) (punctuation 947 . 948) (symbol 935 . 947) (punctuation 934 . 935) (punctuation 933 . 934) (symbol 930 . 933) (TYPEDEF 922 . 929) (punctuation 841 . 842) (punctuation 840 . 841) (TYPEDEF 831 . 838))
+      :lexical-table 
+        '(("NAV_MSGS_MESSAGE_ODOMETRY_H")
+          )
+))
+  :file "!opt!ros!indigo!include!nav_msgs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

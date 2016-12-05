@@ -1,0 +1,10 @@
+// mapper.h
+
+#ifndef __MAPPER_H_INCLUDED__
+#define __MAPPER_H_INCLUDED__
+
+class mapper {
+
+};
+
+#endif

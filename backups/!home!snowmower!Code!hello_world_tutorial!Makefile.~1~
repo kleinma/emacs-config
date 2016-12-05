@@ -1,0 +1,14 @@
+# Declare our preferred compiler
+CC=g++
+# Declare the compile flags
+CFLAGS=-I/opt/ros/indigo/include
+# Declare the linker flags
+LDFLAGS=-L/opt/ros/indigo/lib -Wl,-rpath,/opt/ros/indigo/lib -lroscpp -lrosconsole
+
+# A rule which satisfies any dependencies with the ".o" extension by compiling (but not linking) the corresponding ".cpp" file with the same basename
+%.o: %.cpp
+  $(CC) -c -o $@ $< $(CFLAGS)
+
+# A rule to build the hello_world_node program
+hello_world_node: hello_world_node.o
+  $(CC) -o hello_world_node hello_world_node.o $(LDFLAGS)

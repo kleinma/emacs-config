@@ -1,0 +1,21 @@
+import serial, struct
+
+# Create a serial object and open the port
+tivaPort = 'COM7'
+tivaBaudrate = 9600
+tivaSerial = serial.Serial(port=tivaPort,baudrate=tivaBaudrate,timeout=1.0)
+tivaSerial.open()
+
+# Set desired velocity and angular velocity (i.e. omega)
+velocity = 2100
+omega = 1500
+
+# Calculate the checksum '<BBBBhh' little endian, 4 unsigned bytes and 2 shorts
+checksum = (sum(bytearray(struct.pack('<BBBBhh',170,160,4,1,int(round(velocity)),int(round(omega))))) % 256)
+# Put together the serialized packet
+serialMsg = struct.pack('<BBBBhhBB',170,160,4,1,int(round(velocity)),int(round(omega)),checksum,13)
+# Write packet to serial buffer
+tivaSerial.write(serialMsg)
+
+# Close serial port
+tivaSerial.close()

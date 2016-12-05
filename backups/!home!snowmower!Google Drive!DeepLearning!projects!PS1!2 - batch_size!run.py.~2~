@@ -1,0 +1,33 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+import fully_connected_feed_batch_size as fc
+
+# Create a vector to store all our batch sizes
+# 100 is the default. We try that, half that, double that, min (1) and max (55000)
+batch_size_vec = [10, 20, 50, 100, 200, 500]
+time_to_ninety = np.empty([0,0])
+
+for x in xrange(len(batch_size_vec)):
+    step_vec, time_vec, train_prec, val_prec, test_prec = fc.run_training(batch_size_vec[x])
+    print("successful run.")
+    plt.subplot(1,2,1)
+    plt.plot(step_vec, test_prec, label=str(batch_size_vec[x]))
+    plt.subplot(1,2,2)
+    plt.plot(step_vec,time_vec, label=str(batch_size_vec[x]))
+    time_to_ninety = np.append(time_to_ninety,time_vec[np.argmax(test_prec>90)])
+    print('batch_size = ' + str(batch_size_vec[x]) + ', time to .90 = ' + str(time_to_ninety[x]))
+    
+plt.subplot(1,2,1)
+plt.legend(loc='lower right')
+plt.xlabel('Training Epoch')
+plt.xlabel('Percent Correct')
+plt.title('Effect of Batch Size on Training per Epoch')
+plt.subplot(1,2,2)
+plt.legend(loc='upper left')
+plt.xlabel('Training Epoch')
+plt.xlabel('Training Time (s)')
+plt.title('Effect of Batch Size on Epoch Duration')
+plt.show()
+
+print time_to_ninety

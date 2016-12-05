@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Matlab
+GenericName=MATLAB R2015a
+Exec=matlab -desktop
+Icon=/home/snowmower/Downloads/matlabicon/matlabicon_256.png
+Terminal=false
+Type=Application
+Categories=Development;

@@ -1,0 +1,8 @@
+INBAG=$1
+OUTBAG=$2
+
+rosbag filter $INBAG $OUTBAG \
+"((
+( (topic != '/imu') and (topic != 'imu')
+)
+))"

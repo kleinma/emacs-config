@@ -1,0 +1,118 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ROSGRAPH_MSGS_MESSAGE_CLOCK_H" variable (:constant-flag t) nil [122 151])
+            ("string" include (:system-flag t) nil [154 171])
+            ("vector" include (:system-flag t) nil [172 189])
+            ("map" include (:system-flag t) nil [190 204])
+            ("ros/types.h" include (:system-flag t) nil [206 228])
+            ("ros/serialization.h" include (:system-flag t) nil [229 259])
+            ("ros/builtin_message_traits.h" include (:system-flag t) nil [260 299])
+            ("ros/message_operations.h" include (:system-flag t) nil [300 335])
+            ("rosgraph_msgs" type
+               (:members 
+                  ( ("Clock_" type
+                       (:template 
+                          ( ("ContainerAllocator" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("Type" type
+                               (:typedef ("Clock_" type
+                                     (:template-specifier 
+                                        ( ("ContainerAllocator" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [418 458])
+                            ("Clock_" function
+                               (:constructor-flag t
+                                :type ("Clock_" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [462 493])
+                            ("Clock_" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_alloc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ContainerAllocator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [503 536]))                                  
+                                :type ("Clock_" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [496 575])
+                            ("_clock_type" type
+                               (:typedef ("ros::Time" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [582 612])
+                            ("clock" variable (:type ("_clock_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [615 633])
+                            ("Ptr" variable (:type "int") (reparse-symbol classsubparts) [713 717])
+                            ("ConstPtr" variable (:type "int") (reparse-symbol classsubparts) [798 807]))                          )
+                        (reparse-symbol namespacesubparts) [364 811])
+                    ("Clock" variable (:type ("rosgraph_msgs::Clock_" type
+                         (:template-specifier 
+                            ( ("std::allocator" type (:template-specifier 
+                                ( ("void" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [840 891])
+                    ("ClockPtr" variable (:type "int") (reparse-symbol namespacesubparts) [945 954])
+                    ("ClockConstPtr" variable (:type "int") (reparse-symbol namespacesubparts) [1012 1026])
+                    ("<<" function
+                       (:template 
+                          ( ("ContainerAllocator" type (:type "class") nil nil))                          
+                        :type ("std::ostream" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1140 1156])
+                            ("v" variable
+                               (:reference 1
+                                :type ("rosgraph_msgs::Clock_" type
+                                     (:template-specifier 
+                                        ( ("ContainerAllocator" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1165 1211]))                          
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1077 1324]))                  
+                :type "namespace")
+                nil [338 1327])
+            ("ros" type
+               (:members 
+                  ( ("message_traits" type
+                       (:members 
+                          ( ("TrueType" variable (:type "int") (reparse-symbol namespacesubparts) [2168 2183])
+                            ("TrueType" variable (:type "int") (reparse-symbol namespacesubparts) [2296 2311])
+                            ("TrueType" variable (:type "int") (reparse-symbol namespacesubparts) [2417 2432])
+                            ("TrueType" variable (:type "int") (reparse-symbol namespacesubparts) [2543 2558])
+                            ("FalseType" variable (:type "int") (reparse-symbol namespacesubparts) [2664 2680])
+                            ("FalseType" variable (:type "int") (reparse-symbol namespacesubparts) [2791 2807]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1372 3952]))                  
+                :type "namespace")
+                nil [1356 3982])
+            ("ros" type
+               (:members 
+                  ( ("serialization" type (:type "namespace") (reparse-symbol namespacesubparts) [4017 4342]))                  
+                :type "namespace")
+                nil [4001 4371])
+            ("ros" type
+               (:members 
+                  ( ("message_operations" type (:type "namespace") (reparse-symbol namespacesubparts) [4406 4778]))                  
+                :type "namespace")
+                nil [4390 4812]))          
+      :file "Clock.h"
+      :pointmax 4871
+      :fsize 4870
+      :lastmodtime '(22385 50872 0 0)
+      :unmatched-syntax '((punctuation 4774 . 4775) (semantic-list 4535 . 4774) (punctuation 4533 . 4534) (punctuation 4531 . 4532) (symbol 4513 . 4531) (punctuation 4512 . 4513) (symbol 4506 . 4512) (punctuation 4505 . 4506) (punctuation 4504 . 4505) (symbol 4491 . 4504) (punctuation 4490 . 4491) (punctuation 4489 . 4490) (punctuation 4487 . 4488) (symbol 4480 . 4487) (STRUCT 4473 . 4479) (punctuation 4471 . 4472) (symbol 4453 . 4471) (CLASS 4447 . 4452) (punctuation 4446 . 4447) (TEMPLATE 4438 . 4446) (punctuation 4321 . 4322) (semantic-list 4148 . 4321) (punctuation 4144 . 4145) (punctuation 4142 . 4143) (symbol 4124 . 4142) (punctuation 4123 . 4124) (symbol 4117 . 4123) (punctuation 4116 . 4117) (punctuation 4115 . 4116) (symbol 4102 . 4115) (punctuation 4101 . 4102) (punctuation 4100 . 4101) (punctuation 4098 . 4099) (symbol 4088 . 4098) (STRUCT 4081 . 4087) (punctuation 4079 . 4080) (symbol 4061 . 4079) (CLASS 4055 . 4060) (punctuation 4054 . 4055) (TEMPLATE 4046 . 4054) (punctuation 3948 . 3949) (semantic-list 3597 . 3948) (punctuation 3595 . 3596) (punctuation 3593 . 3594) (symbol 3575 . 3593) (punctuation 3574 . 3575) (symbol 3568 . 3574) (punctuation 3567 . 3568) (punctuation 3566 . 3567) (symbol 3553 . 3566) (punctuation 3552 . 3553) (punctuation 3551 . 3552) (punctuation 3549 . 3550) (symbol 3539 . 3549) (STRUCT 3532 . 3538) (punctuation 3530 . 3531) (symbol 3512 . 3530) (CLASS 3506 . 3511) (punctuation 3505 . 3506) (TEMPLATE 3497 . 3505) (punctuation 3494 . 3495) (semantic-list 3320 . 3494) (punctuation 3318 . 3319) (punctuation 3316 . 3317) (symbol 3298 . 3316) (punctuation 3297 . 3298) (symbol 3291 . 3297) (punctuation 3290 . 3291) (punctuation 3289 . 3290) (symbol 3276 . 3289) (punctuation 3275 . 3276) (punctuation 3274 . 3275) (punctuation 3272 . 3273) (symbol 3264 . 3272) (STRUCT 3257 . 3263) (punctuation 3255 . 3256) (symbol 3237 . 3255) (CLASS 3231 . 3236) (punctuation 3230 . 3231) (TEMPLATE 3222 . 3230) (punctuation 3219 . 3220) (semantic-list 2906 . 3219) (punctuation 2904 . 2905) (punctuation 2902 . 2903) (symbol 2884 . 2902) (punctuation 2883 . 2884) (symbol 2877 . 2883) (punctuation 2876 . 2877) (punctuation 2875 . 2876) (symbol 2862 . 2875) (punctuation 2861 . 2862) (punctuation 2860 . 2861) (punctuation 2858 . 2859) (symbol 2852 . 2858) (STRUCT 2845 . 2851) (punctuation 2843 . 2844) (symbol 2825 . 2843) (CLASS 2819 . 2824) (punctuation 2818 . 2819) (TEMPLATE 2810 . 2818) (punctuation 2789 . 2790) (punctuation 2785 . 2786) (CONST 2780 . 2785) (punctuation 2778 . 2779) (symbol 2760 . 2778) (punctuation 2759 . 2760) (symbol 2753 . 2759) (punctuation 2752 . 2753) (punctuation 2751 . 2752) (symbol 2738 . 2751) (punctuation 2737 . 2738) (punctuation 2736 . 2737) (punctuation 2734 . 2735) (symbol 2725 . 2734) (STRUCT 2718 . 2724) (punctuation 2716 . 2717) (symbol 2698 . 2716) (CLASS 2692 . 2697) (punctuation 2691 . 2692) (TEMPLATE 2682 . 2690) (punctuation 2662 . 2663) (punctuation 2658 . 2659) (punctuation 2656 . 2657) (symbol 2638 . 2656) (punctuation 2637 . 2638) (symbol 2631 . 2637) (punctuation 2630 . 2631) (punctuation 2629 . 2630) (symbol 2616 . 2629) (punctuation 2615 . 2616) (punctuation 2614 . 2615) (punctuation 2612 . 2613) (symbol 2603 . 2612) (STRUCT 2596 . 2602) (punctuation 2594 . 2595) (symbol 2576 . 2594) (CLASS 2570 . 2575) (punctuation 2569 . 2570) (TEMPLATE 2560 . 2568) (punctuation 2541 . 2542) (punctuation 2537 . 2538) (CONST 2532 . 2537) (punctuation 2530 . 2531) (symbol 2512 . 2530) (punctuation 2511 . 2512) (symbol 2505 . 2511) (punctuation 2504 . 2505) (punctuation 2503 . 2504) (symbol 2490 . 2503) (punctuation 2489 . 2490) (punctuation 2488 . 2489) (punctuation 2486 . 2487) (symbol 2477 . 2486) (STRUCT 2470 . 2476) (punctuation 2468 . 2469) (symbol 2450 . 2468) (CLASS 2444 . 2449) (punctuation 2443 . 2444) (TEMPLATE 2434 . 2442) (punctuation 2415 . 2416) (punctuation 2411 . 2412) (punctuation 2409 . 2410) (symbol 2391 . 2409) (punctuation 2390 . 2391) (symbol 2384 . 2390) (punctuation 2383 . 2384) (punctuation 2382 . 2383) (symbol 2369 . 2382) (punctuation 2368 . 2369) (punctuation 2367 . 2368) (punctuation 2365 . 2366) (symbol 2356 . 2365) (STRUCT 2349 . 2355) (punctuation 2347 . 2348) (symbol 2329 . 2347) (CLASS 2323 . 2328) (punctuation 2322 . 2323) (TEMPLATE 2313 . 2321) (punctuation 2294 . 2295) (punctuation 2290 . 2291) (CONST 2285 . 2290) (punctuation 2283 . 2284) (symbol 2265 . 2283) (punctuation 2264 . 2265) (symbol 2258 . 2264) (punctuation 2257 . 2258) (punctuation 2256 . 2257) (symbol 2243 . 2256) (punctuation 2242 . 2243) (punctuation 2241 . 2242) (punctuation 2239 . 2240) (symbol 2228 . 2239) (STRUCT 2221 . 2227) (punctuation 2219 . 2220) (symbol 2201 . 2219) (CLASS 2195 . 2200) (punctuation 2194 . 2195) (TEMPLATE 2185 . 2193) (punctuation 2166 . 2167) (punctuation 2162 . 2163) (punctuation 2160 . 2161) (symbol 2142 . 2160) (punctuation 2141 . 2142) (symbol 2135 . 2141) (punctuation 2134 . 2135) (punctuation 2133 . 2134) (symbol 2120 . 2133) (punctuation 2119 . 2120) (punctuation 2118 . 2119) (punctuation 2116 . 2117) (symbol 2105 . 2116) (STRUCT 2098 . 2104) (punctuation 2096 . 2097) (symbol 2078 . 2096) (CLASS 2072 . 2077) (punctuation 2071 . 2072) (TEMPLATE 2062 . 2070) (punctuation 1164 . 1165) (punctuation 1163 . 1164) (CONST 1157 . 1162) (punctuation 1010 . 1011) (CONST 1005 . 1010) (symbol 999 . 1004) (punctuation 998 . 999) (punctuation 997 . 998) (symbol 984 . 997) (punctuation 983 . 984) (punctuation 982 . 983) (punctuation 980 . 981) (symbol 970 . 980) (punctuation 969 . 970) (punctuation 968 . 969) (symbol 963 . 968) (TYPEDEF 955 . 962) (punctuation 943 . 944) (symbol 937 . 942) (punctuation 936 . 937) (punctuation 935 . 936) (symbol 922 . 935) (punctuation 921 . 922) (punctuation 920 . 921) (punctuation 918 . 919) (symbol 908 . 918) (punctuation 907 . 908) (punctuation 906 . 907) (symbol 901 . 906) (TYPEDEF 893 . 900) (punctuation 839 . 840) (punctuation 838 . 839) (TYPEDEF 830 . 837) (punctuation 796 . 797) (CONST 791 . 796) (punctuation 789 . 790) (symbol 771 . 789) (punctuation 770 . 771) (symbol 764 . 770) (punctuation 763 . 764) (punctuation 762 . 763) (symbol 749 . 762) (punctuation 748 . 749) (punctuation 747 . 748) (punctuation 745 . 746) (symbol 735 . 745) (punctuation 734 . 735) (punctuation 733 . 734) (symbol 728 . 733) (TYPEDEF 720 . 727) (punctuation 711 . 712) (punctuation 709 . 710) (symbol 691 . 709) (punctuation 690 . 691) (symbol 684 . 690) (punctuation 683 . 684) (punctuation 682 . 683) (symbol 669 . 682) (punctuation 668 . 669) (punctuation 667 . 668) (punctuation 665 . 666) (symbol 655 . 665) (punctuation 654 . 655) (punctuation 653 . 654) (symbol 648 . 653) (TYPEDEF 640 . 647))
+      :lexical-table 
+        '(("ROSGRAPH_MSGS_MESSAGE_CLOCK_H")
+          )
+))
+  :file "!opt!ros!indigo!include!rosgraph_msgs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

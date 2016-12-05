@@ -1,0 +1,1217 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TF2_EXCEPTIONS_H" variable (:constant-flag t) nil [1677 1693])
+            ("stdexcept" include (:system-flag t) nil [1695 1715])
+            ("tf2" type
+               (:members 
+                  ( ("TransformException" type
+                       (:superclasses 
+                          ( ("std::runtime_error" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1924 1931])
+                            ("TransformException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("errorDescription" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1953 1988]))                                  
+                                :type ("TransformException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1934 2033]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1869 2037])
+                    ("ConnectivityException" type
+                       (:superclasses 
+                          ( ("TransformException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2310 2317])
+                            ("ConnectivityException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("errorDescription" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2342 2377]))                                  
+                                :type ("ConnectivityException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2320 2427]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2253 2431])
+                    ("LookupException" type
+                       (:superclasses 
+                          ( ("TransformException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2836 2843])
+                            ("LookupException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("errorDescription" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2862 2897]))                                  
+                                :type ("LookupException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2846 2947]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2784 2951])
+                    ("ExtrapolationException" type
+                       (:superclasses 
+                          ( ("TransformException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3149 3156])
+                            ("ExtrapolationException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("errorDescription" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3182 3217]))                                  
+                                :type ("ExtrapolationException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3159 3267]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3089 3271])
+                    ("InvalidArgumentException" type
+                       (:superclasses 
+                          ( ("TransformException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3478 3485])
+                            ("InvalidArgumentException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("errorDescription" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3513 3548]))                                  
+                                :type ("InvalidArgumentException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3488 3598]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3415 3602])
+                    ("TimeoutException" type
+                       (:superclasses 
+                          ( ("TransformException" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3738 3745])
+                            ("TimeoutException" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("errorDescription" variable
+                                       (:constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3765 3800]))                                  
+                                :type ("TimeoutException" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3748 3850]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3683 3854]))                  
+                :type "namespace")
+                nil [1717 3858]))          
+      :file "exceptions.h"
+      :pointmax 3887
+      :fsize 3886
+      :lastmodtime '(22233 59570 0 0)
+      :unmatched-syntax '((punctuation 3850 . 3851) (punctuation 3598 . 3599) (punctuation 3267 . 3268) (punctuation 2947 . 2948) (punctuation 2427 . 2428) (punctuation 2033 . 2034))
+      :lexical-table 
+        '(("TF2_EXCEPTIONS_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TF2_BUFFER_CORE_H" variable (:constant-flag t) nil [1675 1692])
+            ("transform_storage.h" include nil nil [1694 1724])
+            ("boost/signals2.hpp" include (:system-flag t) nil [1726 1755])
+            ("string" include (:system-flag t) nil [1757 1774])
+            ("ros/duration.h" include nil nil [1776 1801])
+            ("ros/time.h" include nil nil [1802 1823])
+            ("geometry_msgs/TransformStamped.h" include nil nil [1866 1909])
+            ("boost/unordered_map.hpp" include (:system-flag t) nil [1989 2023])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [2024 2057])
+            ("boost/function.hpp" include (:system-flag t) nil [2058 2087])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [2088 2119])
+            ("tf2" type
+               (:members 
+                  ( ("P_TimeAndFrameID" type
+                       (:typedef ("std::pair" type
+                             (:template-specifier 
+                                ( ("ros::Time" type nil nil nil)
+                                  ("CompactFrameID" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2138 2200])
+                    ("TransformableCallbackHandle" type
+                       (:typedef ("uint32_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2201 2246])
+                    ("TransformableRequestHandle" type
+                       (:typedef ("uint64_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2247 2291])
+                    ("TimeCacheInterface" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2293 2318])
+                    ("TimeCacheInterfacePtr" type
+                       (:typedef ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("TimeCacheInterface" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [2319 2387])
+                    ("TransformableResult" type
+                       (:members 
+                          ( ("TransformAvailable" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2418 2437])
+                            ("TransformFailure" variable
+                               (:constant-flag t
+                                :type "int")
+                                (reparse-symbol enumsubparts) [2440 2457]))                          
+                        :type "enum")
+                        (reparse-symbol namespacesubparts) [2389 2460])
+                    ("BufferCore" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3583 3590])
+                            ("DEFAULT_CACHE_TIME" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "10"
+                                :type "int")
+                                (reparse-symbol classsubparts) [3645 3686])
+                            ("MAX_GRAPH_DEPTH" variable
+                               (:typemodifiers ("static")
+                                :constant-flag t
+                                :default-value "1000UL"
+                                :type ("uint32_t" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3747 3794])
+                            ("BufferCore" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("cache_time_" variable
+                                       (:default-value "ros::Duration(DEFAULT_CACHE_TIME)"
+                                        :type ("ros::Duration" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4077 4138]))                                  
+                                :type ("BufferCore" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4066 4140])
+                            ("BufferCore" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :typemodifiers ("virtual")
+                                :arguments 
+                                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4163 4168]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4143 4169])
+                            ("clear" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4204 4217])
+                            ("setTransform" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("transform" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("geometry_msgs::TransformStamped" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4616 4665])
+                                    ("authority" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4666 4696])
+                                    ("is_static" variable
+                                       (:default-value "false"
+                                        :type "bool")
+                                        (reparse-symbol arg-sub-list) [4697 4719]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [4598 4721])
+                            ("lookupTransform" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5308 5340])
+                                    ("source_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5341 5373])
+                                    ("time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5380 5402]))                                  
+                                :type ("geometry_msgs::TransformStamped" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [5255 5409])
+                            ("lookupTransform" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6169 6201])
+                                    ("target_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6202 6231])
+                                    ("source_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6238 6270])
+                                    ("source_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6271 6300])
+                                    ("fixed_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6307 6338]))                                  
+                                :type ("geometry_msgs::TransformStamped" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6117 6345])
+                            ("canTransform" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8823 8855])
+                                    ("source_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8856 8888])
+                                    ("time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8909 8931])
+                                    ("error_msg" variable
+                                       (:pointer 1
+                                        :default-value "NULL"
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [8932 8961]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [8805 8969])
+                            ("canTransform" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9535 9567])
+                                    ("target_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9568 9597])
+                                    ("source_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9618 9650])
+                                    ("source_time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9651 9680])
+                                    ("fixed_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9701 9732])
+                                    ("error_msg" variable
+                                       (:pointer 1
+                                        :default-value "NULL"
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [9733 9762]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [9517 9770])
+                            ("allFramesAsYAML" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("current_time" variable (:type "double") (reparse-symbol arg-sub-list) [9910 9930]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9882 9937])
+                            ("allFramesAsYAML" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [9984 10020])
+                            ("allFramesAsString" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10111 10149])
+                            ("TransformableCallback" variable (:type "int") (reparse-symbol classsubparts) [10369 10391])
+                            ("addTransformableCallback" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("cb" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TransformableCallback" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10479 10511]))                                  
+                                :type ("TransformableCallbackHandle" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10426 10512])
+                            ("removeTransformableCallback" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("handle" variable (:type ("TransformableCallbackHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10579 10614]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10546 10615])
+                            ("addTransformableRequest" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("handle" variable (:type ("TransformableCallbackHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10700 10735])
+                                    ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10736 10768])
+                                    ("source_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [10769 10801])
+                                    ("time" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10802 10817]))                                  
+                                :type ("TransformableRequestHandle" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [10649 10818])
+                            ("cancelTransformableRequest" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("handle" variable (:type ("TransformableRequestHandle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10884 10918]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [10852 10919])
+                            ("setUsingDedicatedThread" function
+                               (:arguments 
+                                  ( ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [11099 11110]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11070 11146])
+                            ("isUsingDedicatedThread" function
+                               (:methodconst-flag t
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11196 11266])
+                            ("_addTransformsChangedListener" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("" variable (:type ("boost::function" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11669 11685])
+                                    ("" variable (:type "void") (reparse-symbol arg-sub-list) [11685 11695])
+                                    ("" variable (:type ("callback" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11697 11706]))                                  
+                                :type ("boost::signals2::connection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [11611 11707])
+                            ("_removeTransformsChangedListener" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("c" variable (:type ("boost::signals2::connection" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11748 11778]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [11710 11779])
+                            ("_frameExists" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("frame_id_str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [11904 11936]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [11886 11943])
+                            ("_getParent" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("frame_id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12168 12196])
+                                    ("time" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12197 12212])
+                                    ("parent" variable
+                                       (:reference 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12213 12233]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [12152 12240])
+                            ("_getFrameStrings" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("ids" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [12332 12362]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [12310 12369])
+                            ("_lookupFrameNumber" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("frameid_str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12408 12439]))                                  
+                                :type ("CompactFrameID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12374 12496])
+                            ("_lookupOrInsertFrameNumber" function
+                               (:arguments 
+                                  ( ("frameid_str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12541 12572]))                                  
+                                :type ("CompactFrameID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12499 12630])
+                            ("_getLatestCommonTime" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("target_frame" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12659 12687])
+                                    ("source_frame" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12688 12716])
+                                    ("time" variable
+                                       (:reference 1
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12717 12733])
+                                    ("error_string" variable
+                                       (:pointer 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12734 12760]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [12634 12902])
+                            ("_validateFrameId" function
+                               (:methodconst-flag t
+                                :arguments 
+                                  ( ("function_name_arg" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [12938 12968])
+                                    ("frame_id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [12969 12997]))                                  
+                                :type ("CompactFrameID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [12906 13066])
+                            ("getCacheLength" function (:type ("ros::Duration" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13141 13194])
+                            ("_allFramesAsDot" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("current_time" variable (:type "double") (reparse-symbol arg-sub-list) [13336 13356]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13308 13363])
+                            ("_allFramesAsDot" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13366 13402])
+                            ("_chainAsVector" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("target_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13534 13567])
+                                    ("target_time" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13568 13590])
+                                    ("source_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13591 13624])
+                                    ("source_time" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13625 13647])
+                                    ("fixed_frame" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [13648 13680])
+                                    ("output" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("std::string" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [13681 13714]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [13514 13721])
+                            ("private" label nil (reparse-symbol classsubparts) [13723 13731])
+                            ("allFramesAsStringNoLock" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [13850 13894])
+                            ("V_TimeCacheInterface" type
+                               (:typedef ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("TimeCacheInterfacePtr" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [14125 14189])
+                            ("frames_" variable (:type ("V_TimeCacheInterface" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14192 14221])
+                            ("frame_mutex_" variable
+                               (:typemodifiers ("mutable")
+                                :type ("boost::mutex" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [14317 14351])
+                            ("M_StringToCompactFrameID" type
+                               (:typedef ("boost::unordered_map" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil)
+                                          ("CompactFrameID" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [14417 14500])
+                            ("frameIDs_" variable (:type ("M_StringToCompactFrameID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14503 14538])
+                            ("frameIDs_reverse" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [14635 14677])
+                            ("frame_authority_" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("CompactFrameID" type nil nil nil)
+                                      ("std::string" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [14756 14811])
+                            ("cache_time_" variable (:type ("ros::Duration" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14858 14884])
+                            ("M_TransformableCallback" type
+                               (:typedef ("boost::unordered_map" type
+                                     (:template-specifier 
+                                        ( ("TransformableCallbackHandle" type nil nil nil)
+                                          ("TransformableCallback" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [14888 14993])
+                            ("transformable_callbacks_" variable (:type ("M_TransformableCallback" type (:type "class") nil nil)) (reparse-symbol classsubparts) [14996 15045])
+                            ("transformable_callbacks_counter_" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15048 15090])
+                            ("transformable_callbacks_mutex_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15093 15137])
+                            ("TransformableRequest" type
+                               (:members 
+                                  ( ("time" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15177 15192])
+                                    ("request_handle" variable (:type ("TransformableRequestHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15197 15239])
+                                    ("cb_handle" variable (:type ("TransformableCallbackHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15244 15282])
+                                    ("target_id" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15287 15312])
+                                    ("source_id" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15317 15342])
+                                    ("target_string" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15347 15373])
+                                    ("source_string" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15378 15404]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [15141 15409])
+                            ("V_TransformableRequest" type
+                               (:typedef ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("TransformableRequest" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [15412 15477])
+                            ("transformable_requests_" variable (:type ("V_TransformableRequest" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15480 15527])
+                            ("transformable_requests_mutex_" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15530 15573])
+                            ("transformable_requests_counter_" variable (:type ("uint64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15576 15617])
+                            ("RemoveRequestByCallback" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol classsubparts) [15621 15652])
+                            ("RemoveRequestByID" type
+                               (:prototype t
+                                :type "struct")
+                                (reparse-symbol classsubparts) [15655 15680])
+                            ("TransformsChangedSignal" variable (:type "int") (reparse-symbol classsubparts) [15779 15803])
+                            ("_transforms_changed_" variable (:type ("TransformsChangedSignal" type (:type "class") nil nil)) (reparse-symbol classsubparts) [15911 15956])
+                            ("getFrame" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("c_frame_id" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16395 16421]))                                  
+                                :type ("TimeCacheInterfacePtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16364 16428])
+                            ("allocateFrame" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("cfid" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16468 16488])
+                                    ("is_static" variable (:type "bool") (reparse-symbol arg-sub-list) [16489 16504]))                                  
+                                :type ("TimeCacheInterfacePtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16432 16505])
+                            ("warnFrameId" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("function_name_arg" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [16527 16557])
+                                    ("frame_id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16558 16586]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [16510 16593])
+                            ("validateFrameId" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("function_name_arg" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol arg-sub-list) [16627 16657])
+                                    ("frame_id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16658 16686]))                                  
+                                :type ("CompactFrameID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16596 16693])
+                            ("lookupFrameNumber" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("frameid_str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16808 16839]))                                  
+                                :type ("CompactFrameID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16775 16846])
+                            ("lookupOrInsertFrameNumber" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("frameid_str" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16969 17000]))                                  
+                                :type ("CompactFrameID" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [16928 17001])
+                            ("lookupFrameString" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :constant-flag t
+                                :arguments 
+                                  ( ("frame_id_num" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17121 17149]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [17084 17156])
+                            ("createConnectivityErrorString" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("source_frame" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17195 17223])
+                                    ("target_frame" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17224 17252])
+                                    ("out" variable
+                                       (:pointer 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17253 17270]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [17160 17277])
+                            ("getLatestCommonTime" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("target_frame" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17414 17442])
+                                    ("source_frame" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17443 17471])
+                                    ("time" variable
+                                       (:reference 1
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17472 17488])
+                                    ("error_string" variable
+                                       (:pointer 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17489 17515]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [17390 17522])
+                            ("walkToTopParent" function
+                               (:template 
+                                  ( ("F" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("F" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17569 17574])
+                                    ("time" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17575 17590])
+                                    ("target_id" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17591 17616])
+                                    ("source_id" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17617 17642])
+                                    ("error_string" variable
+                                       (:pointer 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17643 17669]))                                  
+                                :methodconst-flag t
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [17526 17676])
+                            ("walkToTopParent" function
+                               (:template 
+                                  ( ("F" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("f" variable
+                                       (:reference 1
+                                        :type ("F" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17854 17859])
+                                    ("time" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17860 17875])
+                                    ("target_id" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17876 17901])
+                                    ("source_id" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17902 17927])
+                                    ("error_string" variable
+                                       (:pointer 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [17928 17954])
+                                    ("frame_chain" variable
+                                       (:pointer 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("CompactFrameID" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [17955 17996]))                                  
+                                :methodconst-flag t
+                                :prototype-flag t)
+                                (reparse-symbol classsubparts) [17811 18003])
+                            ("testTransformableRequests" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [18007 18040])
+                            ("canTransformInternal" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("target_id" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18069 18094])
+                                    ("source_id" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18095 18120])
+                                    ("time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18141 18163])
+                                    ("error_msg" variable
+                                       (:pointer 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18164 18187]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [18043 18194])
+                            ("canTransformNoLock" function
+                               (:prototype-flag t
+                                :methodconst-flag t
+                                :arguments 
+                                  ( ("target_id" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18221 18246])
+                                    ("source_id" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18247 18272])
+                                    ("time" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18295 18317])
+                                    ("error_msg" variable
+                                       (:pointer 1
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [18318 18341]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [18197 18348])
+                            ("using_dedicated_thread_" variable (:type "bool") (reparse-symbol classsubparts) [18472 18501]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [3564 18505]))                  
+                :type "namespace")
+                nil [2121 18511]))          
+      :file "buffer_core.h"
+      :pointmax 18534
+      :fsize 18533
+      :lastmodtime '(22233 59570 0 0)
+      :unmatched-syntax '((punctuation 18511 . 18512) (punctuation 15777 . 15778) (semantic-list 15771 . 15777) (VOID 15767 . 15771) (punctuation 15766 . 15767) (symbol 15760 . 15766) (punctuation 15759 . 15760) (punctuation 15758 . 15759) (symbol 15750 . 15758) (punctuation 15749 . 15750) (punctuation 15748 . 15749) (symbol 15743 . 15748) (TYPEDEF 15735 . 15742) (punctuation 11695 . 11696) (semantic-list 11689 . 11695) (punctuation 11684 . 11685) (punctuation 11266 . 11267) (punctuation 11146 . 11147) (punctuation 10367 . 10368) (semantic-list 10183 . 10367) (VOID 10179 . 10183) (punctuation 10178 . 10179) (symbol 10170 . 10178) (punctuation 10169 . 10170) (punctuation 10168 . 10169) (symbol 10163 . 10168) (TYPEDEF 10155 . 10162))
+      :lexical-table 
+        '(("TF2_BUFFER_CORE_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TF2_CONVERT_H" variable (:constant-flag t) nil [1683 1696])
+            ("tf2/transform_datatypes.h" include (:system-flag t) nil [1699 1735])
+            ("tf2/exceptions.h" include (:system-flag t) nil [1736 1763])
+            ("geometry_msgs/TransformStamped.h" include (:system-flag t) nil [1764 1807])
+            ("tf2/impl/convert.h" include (:system-flag t) nil [1808 1837])
+            ("tf2" type
+               (:members 
+                  ( ("doTransform" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("data_in" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2383 2400])
+                            ("data_out" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2401 2413])
+                            ("transform" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("geometry_msgs::TransformStamped" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2414 2463]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2345 2464])
+                    ("getTimestamp" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("ros::Time" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2640 2651]))                          
+                        :constant-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2589 2652])
+                    ("getFrameId" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2826 2837]))                          
+                        :constant-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2775 2838])
+                    ("getTimestamp" function
+                       (:template 
+                          ( ("P" type (:type "class") nil nil))                          
+                        :type ("ros::Time" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf2::Stamped" type
+                                     (:template-specifier 
+                                        ( ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2942 2967]))                          
+                        :constant-flag t)
+                        (reparse-symbol namespacesubparts) [2891 2996])
+                    ("getFrameId" function
+                       (:template 
+                          ( ("P" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("tf2::Stamped" type
+                                     (:template-specifier 
+                                        ( ("P" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3098 3123]))                          
+                        :constant-flag t)
+                        (reparse-symbol namespacesubparts) [3047 3155])
+                    ("toMsg" function
+                       (:template 
+                          ( ("A" type (:type "class") nil nil)
+                            ("B" type (:type "class") nil nil))                          
+                        :type ("B" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("A" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3471 3482]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [3428 3483])
+                    ("fromMsg" function
+                       (:template 
+                          ( ("A" type (:type "class") nil nil)
+                            ("B" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("A" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3805 3814])
+                            ("b" variable
+                               (:reference 1
+                                :type ("B" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3815 3820]))                          
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [3757 3821])
+                    ("convert" function
+                       (:template 
+                          ( ("A" type (:type "class") nil nil)
+                            ("B" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("A" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4219 4230])
+                            ("b" variable
+                               (:reference 1
+                                :type ("B" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4231 4236]))                          )
+                        (reparse-symbol namespacesubparts) [4176 4406])
+                    ("convert" function
+                       (:template 
+                          ( ("A" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("a1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("A" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4442 4454])
+                            ("a2" variable
+                               (:reference 1
+                                :type ("A" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4455 4461]))                          )
+                        (reparse-symbol namespacesubparts) [4408 4545]))                  
+                :type "namespace")
+                nil [1839 4549]))          
+      :file "convert.h"
+      :pointmax 4574
+      :fsize 4573
+      :lastmodtime '(22233 59570 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TF2_CONVERT_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TF2_TRANSFORM_DATATYPES_H" variable (:constant-flag t) nil [1683 1708])
+            ("string" include (:system-flag t) nil [1710 1727])
+            ("ros/time.h" include nil nil [1728 1749])
+            ("tf2" type
+               (:members 
+                  ( ("Stamped" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1954 1961])
+                            ("stamp_" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1964 1981])
+                            ("frame_id_" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2029 2051])
+                            ("Stamped" function
+                               (:constructor-flag t
+                                :type ("Stamped" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2123 2184])
+                            ("Stamped" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("input" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2273 2288])
+                                    ("timestamp" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ros::Time" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2289 2316])
+                                    ("frame_id" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2317 2346]))                                  
+                                :type ("Stamped" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2265 2409])
+                            ("Stamped" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Stamped" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2451 2471]))                                  
+                                :type ("Stamped" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2443 2535])
+                            ("setData" function
+                               (:arguments 
+                                  ( ("input" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2584 2599]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2571 2632]))                          
+                        :superclasses 
+                          ( ("T" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1905 2636])
+                    ("==" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Stamped" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2733 2753])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Stamped" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2754 2774]))                          
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [2694 2895]))                  
+                :type "namespace")
+                nil [1751 2900]))          
+      :file "transform_datatypes.h"
+      :pointmax 2936
+      :fsize 2935
+      :lastmodtime '(22233 59570 0 0)
+      :unmatched-syntax '((punctuation 2895 . 2896) (punctuation 2632 . 2633) (punctuation 2410 . 2411) (punctuation 2184 . 2185))
+      :lexical-table 
+        '(("TF2_TRANSFORM_DATATYPES_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TF2_TRANSFORM_STORAGE_H" variable (:constant-flag t) nil [1681 1704])
+            ("tf2/LinearMath/Vector3.h" include (:system-flag t) nil [1706 1741])
+            ("tf2/LinearMath/Quaternion.h" include (:system-flag t) nil [1742 1780])
+            ("ros/message_forward.h" include (:system-flag t) nil [1782 1814])
+            ("ros/time.h" include (:system-flag t) nil [1815 1836])
+            ("ros/types.h" include (:system-flag t) nil [1837 1859])
+            ("geometry_msgs" type
+               (:members 
+                  ( ("ROS_DECLARE_MESSAGE" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("TransformStamped" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1907 1924]))                          
+                        :type "int")
+                        (reparse-symbol namespacesubparts) [1887 1925]))                  
+                :type "namespace")
+                nil [1861 1927])
+            ("tf2" type
+               (:members 
+                  ( ("CompactFrameID" type
+                       (:typedef ("uint32_t" type (:type "class") nil nil)
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [1946 1978])
+                    ("TransformStorage" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2059 2066])
+                            ("TransformStorage" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("TransformStorage" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2069 2088])
+                            ("TransformStorage" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("geometry_msgs::TransformStamped" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2108 2152])
+                                    ("frame_id" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2153 2177])
+                                    ("child_frame_id" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2178 2208]))                                  
+                                :type ("TransformStorage" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2091 2209])
+                            ("TransformStorage" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TransformStorage" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2230 2258]))                                  
+                                :type ("TransformStorage" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2213 2283])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("rhs" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("TransformStorage" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2315 2343]))                                  
+                                :type ("TransformStorage" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2287 2550])
+                            ("rotation_" variable (:type ("tf2::Quaternion" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2554 2580])
+                            ("translation_" variable (:type ("tf2::Vector3" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2583 2609])
+                            ("stamp_" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2612 2629])
+                            ("frame_id_" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2632 2657])
+                            ("child_frame_id_" variable (:type ("CompactFrameID" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2660 2691]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2034 2694]))                  
+                :type "namespace")
+                nil [1929 2697]))          
+      :file "transform_storage.h"
+      :pointmax 2734
+      :fsize 2733
+      :lastmodtime '(22233 59570 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("TF2_TRANSFORM_STORAGE_H")
+          )
+))
+  :file "!opt!ros!indigo!include!tf2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

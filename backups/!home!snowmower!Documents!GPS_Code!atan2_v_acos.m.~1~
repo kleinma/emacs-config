@@ -1,0 +1,94 @@
+% We want to test atan2 vs atan vs acos in finding the
+% angle of rotation of a vector in the ENU coordinate frame
+
+% Here are a range of values in the "e" (east) direction
+e = -10:.1:10;
+
+% Here are a range of values in the "n" (north) direction
+n = -10:.1:10;
+
+E = repmat(e,length(n),1);
+N = repmat(n',1,length(e));
+
+ac = acos(E./sqrt(E.^2+N.^2));
+
+at1 = -atan(E./N);
+
+at2 = -atan2(E,N);
+
+figure(1)
+subplot(1,3,1)
+mesh(E,N,ac)
+view(0,90)
+axis square
+colorbar
+title('acos','FontSize',20)
+xlabel('east','FontSIze',14)
+ylabel('north','FontSIze',14)
+
+subplot(1,3,2)
+mesh(E,N,at1)
+view(0,90)
+axis square
+colorbar
+title('atan','FontSize',20)
+xlabel('east','FontSIze',14)
+ylabel('north','FontSIze',14)
+
+subplot(1,3,3)
+mesh(E,N,at2)
+view(0,90)
+axis square
+colorbar
+title('atan2','FontSIze',20)
+xlabel('east','FontSIze',14)
+ylabel('north','FontSIze',14)
+
+
+% e-n axis in ENU space
+n_axis = [0,1];
+e_axis = [1,0];
+
+% x-y axis in ENU space
+ypt = [1.2 -1.5]';
+
+% First, calculate the angle between the two axis
+a = -atan2(ypt(1),ypt(2));
+
+% Then normalize it and create an x-axis for visualization purposes
+ypt = ypt/norm(ypt);
+xpt = [0 1; -1 0]*ypt;
+
+
+% Create a robot location in e-n space
+robLocEN = [1.5 1.5]';
+
+% Create the rotation matrix (to rotate clockwise with a is positive)
+a = -a;
+R = [cos(a) -sin(a); sin(a) cos(a)];
+
+% Find the robot location in x-y space
+robLocXY = R*robLocEN;
+
+
+figure(2)
+subplot(1,2,1)
+plot([0 e_axis(1)],[0,e_axis(2)],[0 n_axis(1)],[0,n_axis(2)])
+hold on
+plot([0 xpt(1)],[0 xpt(2)],[0 ypt(1)],[0 ypt(2)])
+plot([0, robLocEN(1)],[0,robLocEN(2)],'r')
+hold off
+xlim([-2 2])
+ylim([-2 2])
+axis square
+title('e-n Space','FontSize',20)
+
+subplot(1,2,2)
+plot([0 e_axis(1)],[0,e_axis(2)],[0 n_axis(1)],[0,n_axis(2)])
+hold on
+plot([0, robLocXY(1)],[0, robLocXY(2)],'r')
+hold off
+xlim([-2 2])
+ylim([-2 2])
+axis square
+title('x-y Space','FontSize',20)

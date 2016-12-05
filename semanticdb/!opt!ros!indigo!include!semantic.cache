@@ -1,0 +1,64 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("_XMLRPCVALUE_H_" variable (:constant-flag t) nil [34 49])
+            ("XmlRpcDecl.h" include nil nil [214 237])
+            ("map" include (:system-flag t) nil [258 273])
+            ("string" include (:system-flag t) nil [274 292])
+            ("vector" include (:system-flag t) nil [293 311])
+            ("time.h" include (:system-flag t) nil [312 330])
+            ("XmlRpc" type
+               (:members 
+                  ( ("XmlRpcValue" variable (:type ("XMLRPCPP_DECL" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [466 6437]))                  
+                :type "namespace")
+                nil [339 6439])
+            ("<<" function
+               (:prototype-flag t
+                :operator-flag t
+                :arguments 
+                  ( ("os" variable
+                       (:reference 1
+                        :type ("std::ostream" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6487 6504])
+                    ("v" variable
+                       (:reference 1
+                        :type ("XmlRpc::XmlRpcValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6505 6528]))                  
+                :type ("std::ostream" type (:type "class") nil nil))
+                nil [6462 6529]))          
+      :file "XmlRpcValue.h"
+      :pointmax 6558
+      :fsize 6557
+      :lastmodtime '(22385 42455 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_XMLRPCVALUE_H_")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("XMLRPCPP_DECL_H_INCLUDED" variable (:constant-flag t) nil [1852 1876])
+            ("ros/macros.h" include (:system-flag t) nil [1878 1901])
+            ("XMLRPCPP_DECL" variable (:constant-flag t) nil [2238 2251]))          
+      :file "XmlRpcDecl.h"
+      :pointmax 2298
+      :fsize 2297
+      :lastmodtime '(22385 42455 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("XMLRPCPP_DECL")
+          ("XMLRPCPP_DECL_H_INCLUDED")
+          )
+))
+  :file "!opt!ros!indigo!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

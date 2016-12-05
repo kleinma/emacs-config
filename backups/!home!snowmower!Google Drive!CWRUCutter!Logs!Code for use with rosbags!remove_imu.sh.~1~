@@ -1,0 +1,8 @@
+INBAG=$1
+OUTBAG=$2
+
+rosbag filter $INBAG $OUTBAG \
+"((
+( (topic != '/enc') and (topic != 'enc')
+)
+))"

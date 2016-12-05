@@ -1,0 +1,1748 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_DECONSTRUCT_HPP" variable (:constant-flag t) nil [48 78])
+            ("boost/config.hpp" include (:system-flag t) nil [965 992])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [993 1024])
+            ("boost/signals2/deconstruct_ptr.hpp" include (:system-flag t) nil [1025 1070])
+            ("boost/type_traits/alignment_of.hpp" include (:system-flag t) nil [1071 1116])
+            ("boost/type_traits/remove_const.hpp" include (:system-flag t) nil [1117 1162])
+            ("boost/type_traits/type_with_alignment.hpp" include (:system-flag t) nil [1163 1215])
+            ("cstddef" include (:system-flag t) nil [1216 1234])
+            ("new" include (:system-flag t) nil [1235 1249])
+            ("boost" type
+               (:members 
+                  ( ("enable_shared_from_this" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [1271 1322])
+                    ("signals2" type
+                       (:members 
+                          ( ("deconstruct_access" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1347 1372])
+                            ("detail" type
+                               (:members 
+                                  ( ("adl_predestruct" function
+                                       (:typemodifiers ("inline")
+                                        :arguments 
+                                          ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1423 1427]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1395 1430]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1374 1432])
+                            ("postconstructor_invoker" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1511 1518])
+                                    ("postconstruct" function
+                                       (:methodconst-flag t
+                                        :constant-flag t
+                                        :type ("shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1611 1872])
+                                    ("postconstruct" function
+                                       (:constant-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2036 2043])
+                                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2048 2053]))                                          
+                                        :type ("shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [2001 2317])
+                                    ("private" label nil (reparse-symbol classsubparts) [6615 6623])
+                                    ("boost" friend nil (reparse-symbol classsubparts) [6628 6646])
+                                    ("signals2::deconstruct_access" variable (:type "int") (reparse-symbol classsubparts) [6648 6677])
+                                    ("postconstructor_invoker" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("sp" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("shared_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("T" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [6706 6731]))                                          
+                                        :type ("postconstructor_invoker" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6682 6780])
+                                    ("_sp" variable (:type ("shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("T" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [6785 6803])
+                                    ("_postconstructed" variable
+                                       (:typemodifiers ("mutable")
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [6808 6838]))                                  )
+                                (reparse-symbol namespacesubparts) [1454 6841])
+                            ("detail" type
+                               (:members 
+                                  ( ("sp_aligned_storage" type
+                                       (:template 
+                                          ( ("std::size_t" type (:typevar "N") nil nil)
+                                            ("std::size_t" type (:typevar "A") nil nil))                                          
+                                        :type "struct"
+                                        :members 
+                                          ( ("type" type
+                                               (:members 
+                                                  ( ("data_" variable
+                                                       (:dereference 1
+                                                        :type "char")
+                                                        (reparse-symbol classsubparts) [6961 6977])
+                                                    ("align_" variable
+                                                       (:typemodifiers ("typename")
+                                                        :type ("boost::type_with_alignment::type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [6986 7040]))                                                  
+                                                :type "union")
+                                                (reparse-symbol classsubparts) [6936 7047]))                                          )
+                                        (reparse-symbol namespacesubparts) [6863 7050])
+                                    ("deconstruct_deleter" type
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("private" label nil (reparse-symbol classsubparts) [7100 7108])
+                                            ("storage_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7201 7219])
+                                            ("initialized_" variable (:type "bool") (reparse-symbol classsubparts) [7225 7243])
+                                            ("storage_" variable (:type ("storage_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7248 7270])
+                                            ("private" label nil (reparse-symbol classsubparts) [7272 7280])
+                                            ("destroy" function (:type "void") (reparse-symbol classsubparts) [7286 7620])
+                                            ("public" label nil (reparse-symbol classsubparts) [7622 7629])
+                                            ("deconstruct_deleter" function
+                                               (:constructor-flag t
+                                                :type ("deconstruct_deleter" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7635 7691])
+                                            ("deconstruct_deleter" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("deconstruct_deleter" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [7881 7909]))                                                  
+                                                :type ("deconstruct_deleter" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7861 7944])
+                                            ("deconstruct_deleter" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [7950 8003])
+                                            ("()" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:pointer 1
+                                                        :type ("T" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [8026 8031]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [8009 8062])
+                                            ("address" function
+                                               (:pointer 1
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [8068 8127])
+                                            ("set_initialized" function (:type "void") (reparse-symbol classsubparts) [8133 8196]))                                          )
+                                        (reparse-symbol namespacesubparts) [7052 8199]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [6843 8201])
+                            ("deconstruct_access" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [8251 8258])
+                                    ("deconstruct" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("postconstructor_invoker" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :typemodifiers ("static"))
+                                        (reparse-symbol classsubparts) [8264 8829])
+                                    ("deconstruct" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :type ("Args" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9061 9068])
+                                            ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9073 9079]))                                          
+                                        :type ("postconstructor_invoker" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [9014 9603]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [8224 16056])
+                            ("deconstruct" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("postconstructor_invoker" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [16177 16290])
+                            ("deconstruct" function
+                               (:arguments 
+                                  ( ("" variable
+                                       (:reference 1
+                                        :type ("Args" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [16505 16512])
+                                    ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16517 16523]))                                  
+                                :type ("postconstructor_invoker" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol namespacesubparts) [16463 16607]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1324 18929]))                  
+                :type "namespace")
+                nil [1251 18953]))          
+      :file "deconstruct.hpp"
+      :pointmax 19023
+      :fsize 19022
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax '((punctuation 16515 . 16516) (punctuation 16514 . 16515) (punctuation 16513 . 16514) (punctuation 16511 . 16512) (punctuation 16461 . 16462) (symbol 16456 . 16460) (punctuation 16454 . 16455) (punctuation 16453 . 16454) (punctuation 16452 . 16453) (CLASS 16447 . 16452) (punctuation 16445 . 16446) (symbol 16444 . 16445) (CLASS 16438 . 16443) (punctuation 16436 . 16437) (TEMPLATE 16428 . 16436) (punctuation 9071 . 9072) (punctuation 9070 . 9071) (punctuation 9069 . 9070) (punctuation 9067 . 9068) (punctuation 9008 . 9009) (symbol 9003 . 9007) (punctuation 9001 . 9002) (punctuation 9000 . 9001) (punctuation 8999 . 9000) (CLASS 8994 . 8999) (punctuation 8992 . 8993) (symbol 8991 . 8992) (CLASS 8985 . 8990) (punctuation 8983 . 8984) (TEMPLATE 8975 . 8983) (punctuation 7200 . 7201) (punctuation 7199 . 7200) (punctuation 7198 . 7199) (symbol 7192 . 7197) (punctuation 7191 . 7192) (punctuation 7190 . 7191) (punctuation 7189 . 7190) (symbol 7187 . 7188) (punctuation 7185 . 7186) (symbol 7173 . 7185) (punctuation 7172 . 7173) (punctuation 7171 . 7172) (symbol 7166 . 7171) (punctuation 7165 . 7166) (punctuation 7164 . 7165) (punctuation 7162 . 7163) (semantic-list 7157 . 7162) (SIZEOF 7151 . 7157) (punctuation 7149 . 7150) (symbol 7131 . 7149) (TYPENAME 7122 . 7130) (TYPEDEF 7114 . 7121) (punctuation 6647 . 6648) (punctuation 6646 . 6647) (punctuation 2046 . 2047) (punctuation 2045 . 2046) (punctuation 2044 . 2045) (punctuation 2042 . 2043) (punctuation 1993 . 1994) (symbol 1989 . 1993) (punctuation 1987 . 1988) (punctuation 1986 . 1987) (punctuation 1985 . 1986) (CLASS 1980 . 1985) (punctuation 1979 . 1980) (TEMPLATE 1971 . 1979) (semantic-list 1567 . 1606) (CONST 1557 . 1562) (semantic-list 1554 . 1556) (punctuation 1552 . 1553) (punctuation 1550 . 1551) (symbol 1549 . 1550) (punctuation 1548 . 1549) (symbol 1538 . 1548) (CONST 1532 . 1537) (OPERATOR 1523 . 1531))
+      :lexical-table 
+        '(("BOOST_SIGNALS2_DECONSTRUCT_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_DECONSTRUCT_PTR_HPP" variable (:constant-flag t) nil [640 674])
+            ("boost/assert.hpp" include (:system-flag t) nil [676 703])
+            ("boost/checked_delete.hpp" include (:system-flag t) nil [704 739])
+            ("boost/signals2/postconstructible.hpp" include (:system-flag t) nil [740 787])
+            ("boost/signals2/predestructible.hpp" include (:system-flag t) nil [788 833])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [834 865])
+            ("boost" type
+               (:members 
+                  ( ("signals2" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("do_postconstruct" function
+                                       (:typemodifiers ("extern" "inline")
+                                        :arguments 
+                                          ( ("ptr" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("postconstructible" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [979 1008]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [943 1142])
+                                    ("do_postconstruct" function
+                                       (:typemodifiers ("extern" "inline")
+                                        :arguments 
+                                          ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1185 1189]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1149 1205])
+                                    ("do_predestruct" function
+                                       (:typemodifiers ("extern" "inline")
+                                        :arguments 
+                                          ( ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1246 1250]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1212 1266])
+                                    ("do_predestruct" function
+                                       (:typemodifiers ("extern" "inline")
+                                        :arguments 
+                                          ( ("ptr" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("predestructible" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1307 1334]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [1273 1568]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [914 1574])
+                            ("predestructing_deleter" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1640 1647])
+                                    ("()" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("ptr" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("T" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1670 1683]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1654 1771]))                                  )
+                                (reparse-symbol namespacesubparts) [1580 1778])
+                            ("deconstruct_ptr" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("ptr" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1839 1846]))                                  )
+                                (reparse-symbol namespacesubparts) [1784 2041])
+                            ("deconstruct_ptr" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil)
+                                    ("D" type (:type "class") nil nil))                                  
+                                :type ("shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :arguments 
+                                  ( ("ptr" variable
+                                       (:pointer 1
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2113 2120])
+                                    ("deleter" variable (:type ("D" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2121 2131]))                                  )
+                                (reparse-symbol namespacesubparts) [2046 2277]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [887 2281]))                  
+                :type "namespace")
+                nil [867 2283]))          
+      :file "deconstruct_ptr.hpp"
+      :pointmax 2330
+      :fsize 2329
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_SIGNALS2_DECONSTRUCT_PTR_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_DUMMY_MUTEX_HPP" variable (:constant-flag t) nil [535 565])
+            ("boost" type
+               (:members 
+                  ( ("signals2" type
+                       (:members 
+                          ( ("dummy_mutex" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [640 647])
+                                    ("lock" function (:type "void") (reparse-symbol classsubparts) [654 668])
+                                    ("try_lock" function (:type "bool") (reparse-symbol classsubparts) [675 705])
+                                    ("unlock" function (:type "void") (reparse-symbol classsubparts) [712 728]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [612 735]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [587 739]))                  
+                :type "namespace")
+                nil [567 767]))          
+      :file "dummy_mutex.hpp"
+      :pointmax 833
+      :fsize 832
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_SIGNALS2_DUMMY_MUTEX_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_LAST_VALUE_HPP" variable (:constant-flag t) nil [429 458])
+            ("boost/optional.hpp" include (:system-flag t) nil [460 489])
+            ("boost/signals2/expired_slot.hpp" include (:system-flag t) nil [490 532])
+            ("boost/throw_exception.hpp" include (:system-flag t) nil [533 569])
+            ("stdexcept" include (:system-flag t) nil [570 590])
+            ("boost" type
+               (:members 
+                  ( ("signals2" type
+                       (:members 
+                          ( ("no_slots_error" type
+                               (:superclasses 
+                                  ( ("std::exception" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [824 831])
+                                    ("what" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :typemodifiers ("virtual")
+                                        :constant-flag t
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [838 922]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [770 929])
+                            ("last_value" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [983 990])
+                                    ("result_type" type
+                                       (:typedef ("T" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [997 1019])
+                                    ("()" function
+                                       (:template 
+                                          ( ("InputIterator" type (:type "class") nil nil))                                          
+                                        :type ("T" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("first" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1079 1099])
+                                            ("last" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1100 1119]))                                          
+                                        :operator-flag t
+                                        :methodconst-flag t)
+                                        (reparse-symbol classsubparts) [1027 1530]))                                  )
+                                (reparse-symbol namespacesubparts) [935 1537])
+                            ("last_value" type
+                               (:type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1587 1594])
+                                    ("result_type" type
+                                       (:typedef ("void")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1601 1626])
+                                    ("()" function
+                                       (:template 
+                                          ( ("InputIterator" type (:type "class") nil nil))                                          
+                                        :type ("result_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("first" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1697 1717])
+                                            ("last" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1718 1737]))                                          
+                                        :operator-flag t
+                                        :methodconst-flag t)
+                                        (reparse-symbol classsubparts) [1633 1943]))                                  
+                                :template-specifier 
+                                  ( ("void" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1543 1950]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [612 1954]))                  
+                :type "namespace")
+                nil [592 1978]))          
+      :file "last_value.hpp"
+      :pointmax 2038
+      :fsize 2037
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_SIGNALS2_LAST_VALUE_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_SIGNAL_HPP" variable (:constant-flag t) nil [372 397])
+            ("algorithm" include (:system-flag t) nil [399 419])
+            ("boost/assert.hpp" include (:system-flag t) nil [420 447])
+            ("boost/config.hpp" include (:system-flag t) nil [448 475])
+            ("boost/function.hpp" include (:system-flag t) nil [476 505])
+            ("boost/mpl/identity.hpp" include (:system-flag t) nil [506 539])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [540 571])
+            ("boost/signals2/connection.hpp" include (:system-flag t) nil [572 612])
+            ("boost/signals2/detail/unique_lock.hpp" include (:system-flag t) nil [613 661])
+            ("boost/signals2/detail/replace_slot_function.hpp" include (:system-flag t) nil [662 720])
+            ("boost/signals2/detail/result_type_wrapper.hpp" include (:system-flag t) nil [721 777])
+            ("boost/signals2/detail/signals_common.hpp" include (:system-flag t) nil [778 829])
+            ("boost/signals2/detail/signals_common_macros.hpp" include (:system-flag t) nil [830 888])
+            ("boost/signals2/detail/slot_groups.hpp" include (:system-flag t) nil [889 937])
+            ("boost/signals2/detail/slot_call_iterator.hpp" include (:system-flag t) nil [938 993])
+            ("boost/signals2/optional_last_value.hpp" include (:system-flag t) nil [994 1043])
+            ("boost/signals2/mutex.hpp" include (:system-flag t) nil [1044 1079])
+            ("boost/signals2/slot.hpp" include (:system-flag t) nil [1080 1114])
+            ("boost/throw_exception.hpp" include (:system-flag t) nil [1115 1151])
+            ("functional" include (:system-flag t) nil [1152 1173])
+            ("boost/signals2/variadic_signal.hpp" include (:system-flag t) nil [1272 1317])
+            ("boost" type
+               (:members 
+                  ( ("signals2" type
+                       (:members 
+                          ( ("swap" function
+                               (:template 
+                                  ( ("Signature" type (:type "class") nil nil)
+                                    ("Combiner" type (:type "class") nil nil)
+                                    ("Group" type (:type "class") nil nil)
+                                    ("GroupCompare" type (:type "class") nil nil)
+                                    ("SlotFunction" type (:type "class") nil nil)
+                                    ("ExtendedSlotFunction" type (:type "class") nil nil)
+                                    ("Mutex" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("sig1" variable
+                                       (:reference 1
+                                        :type ("signal" type
+                                             (:template-specifier 
+                                                ( ("Signature" type nil nil nil)
+                                                  ("Combiner" type nil nil nil)
+                                                  ("Group" type nil nil nil)
+                                                  ("GroupCompare" type nil nil nil)
+                                                  ("SlotFunction" type nil nil nil)
+                                                  ("ExtendedSlotFunction" type nil nil nil)
+                                                  ("Mutex" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1634 1732])
+                                    ("sig2" variable
+                                       (:reference 1
+                                        :type ("signal" type
+                                             (:template-specifier 
+                                                ( ("Signature" type nil nil nil)
+                                                  ("Combiner" type nil nil nil)
+                                                  ("Group" type nil nil nil)
+                                                  ("GroupCompare" type nil nil nil)
+                                                  ("SlotFunction" type nil nil nil)
+                                                  ("ExtendedSlotFunction" type nil nil nil)
+                                                  ("Mutex" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1741 1839]))                                  )
+                                (reparse-symbol namespacesubparts) [1416 1874]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1346 1879]))                  
+                :type "namespace")
+                nil [1326 1881]))          
+      :file "signal.hpp"
+      :pointmax 1919
+      :fsize 1918
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax '((punctuation 1874 . 1875))
+      :lexical-table 
+        '(("BOOST_SIGNALS2_SIGNAL_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_SIGNAL_TYPE_HPP" variable (:constant-flag t) nil [581 611])
+            ("boost/signals2/signal.hpp" include (:system-flag t) nil [735 771])
+            ("BOOST_PARAMETER_MAX_ARITY" variable (:constant-flag t) nil [821 846])
+            ("boost/parameter.hpp" include (:system-flag t) nil [1102 1132])
+            ("boost/type_traits/is_function.hpp" include (:system-flag t) nil [1134 1178])
+            ("boost" type
+               (:members 
+                  ( ("signals2" type
+                       (:members 
+                          ( ("keywords" type (:type "namespace") (reparse-symbol namespacesubparts) [1227 1709])
+                            ("signal_type" type
+                               (:members 
+                                  ( ("parameter_spec" type
+                                       (:typedef ("parameter::parameters" type
+                                             (:template-specifier 
+                                                ( ("parameter::optional" type (:template-specifier 
+                                                    ( ("keywords::tag::combiner_type" type nil nil nil))                                                    ) nil nil)
+                                                  ("parameter::optional" type (:template-specifier 
+                                                    ( ("keywords::tag::group_type" type nil nil nil))                                                    ) nil nil)
+                                                  ("parameter::optional" type (:template-specifier 
+                                                    ( ("keywords::tag::group_compare_type" type nil nil nil))                                                    ) nil nil)
+                                                  ("parameter::optional" type (:template-specifier 
+                                                    ( ("keywords::tag::slot_function_type" type nil nil nil))                                                    ) nil nil)
+                                                  ("parameter::optional" type (:template-specifier 
+                                                    ( ("keywords::tag::extended_slot_function_type" type nil nil nil))                                                    ) nil nil)
+                                                  ("parameter::optional" type (:template-specifier 
+                                                    ( ("keywords::tag::mutex_type" type nil nil nil))                                                    ) nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2139 2724])
+                                    ("public" label nil (reparse-symbol classsubparts) [2730 2737])
+                                    ("args" type
+                                       (:typedef ("parameter_spec::bind::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2766 2931])
+                                    ("signature_type" type
+                                       (:typedef ("Signature" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3105 3138])
+                                    ("combiner_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3402 3421])
+                                    ("group_type" type
+                                       (:typedef ("parameter::value_type::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3429 3531])
+                                    ("group_compare_type" type
+                                       (:typedef ("parameter::value_type::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3539 3684])
+                                    ("slot_function_type" type
+                                       (:typedef ("parameter::value_type::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3692 3840])
+                                    ("extended_slot_function_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4113 4156])
+                                    ("mutex_type" type
+                                       (:typedef ("parameter::value_type::type" type (:type "class") nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4164 4268])
+                                    ("type" type
+                                       (:typedef ("signal" type
+                                             (:template-specifier 
+                                                ( ("signature_type" type nil nil nil)
+                                                  ("combiner_type" type nil nil nil)
+                                                  ("group_type" type nil nil nil)
+                                                  ("group_compare_type" type nil nil nil)
+                                                  ("slot_function_type" type nil nil nil)
+                                                  ("extended_slot_function_type" type nil nil nil)
+                                                  ("mutex_type" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4276 4509]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [2109 4516]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1200 4520]))                  
+                :type "namespace")
+                nil [1180 4544]))          
+      :file "signal_type.hpp"
+      :pointmax 4606
+      :fsize 4605
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax '((punctuation 4112 . 4113) (punctuation 4111 . 4112) (punctuation 4110 . 4111) (symbol 4086 . 4099) (punctuation 4085 . 4086) (punctuation 4084 . 4085) (punctuation 4083 . 4084) (symbol 4069 . 4083) (punctuation 4067 . 4068) (symbol 4062 . 4067) (punctuation 4061 . 4062) (punctuation 4060 . 4061) (punctuation 4059 . 4060) (symbol 4045 . 4059) (punctuation 4044 . 4045) (symbol 4029 . 4044) (punctuation 4028 . 4029) (symbol 4010 . 4028) (punctuation 4009 . 4010) (punctuation 4008 . 4009) (symbol 4002 . 4008) (TYPENAME 3993 . 4001) (punctuation 3979 . 3980) (symbol 3952 . 3979) (punctuation 3951 . 3952) (punctuation 3950 . 3951) (symbol 3947 . 3950) (punctuation 3946 . 3947) (punctuation 3945 . 3946) (symbol 3937 . 3945) (punctuation 3923 . 3924) (symbol 3919 . 3923) (punctuation 3905 . 3906) (symbol 3884 . 3894) (punctuation 3883 . 3884) (punctuation 3882 . 3883) (symbol 3873 . 3882) (TYPENAME 3856 . 3864) (TYPEDEF 3848 . 3855) (punctuation 3401 . 3402) (punctuation 3400 . 3401) (punctuation 3399 . 3400) (punctuation 3389 . 3390) (symbol 3365 . 3376) (punctuation 3364 . 3365) (punctuation 3363 . 3364) (punctuation 3362 . 3363) (symbol 3348 . 3362) (punctuation 3347 . 3348) (symbol 3332 . 3347) (punctuation 3331 . 3332) (punctuation 3330 . 3331) (symbol 3325 . 3330) (TYPENAME 3316 . 3324) (punctuation 3300 . 3301) (symbol 3268 . 3287) (punctuation 3256 . 3257) (symbol 3243 . 3256) (punctuation 3242 . 3243) (punctuation 3241 . 3242) (symbol 3238 . 3241) (punctuation 3237 . 3238) (punctuation 3236 . 3237) (symbol 3228 . 3236) (punctuation 3216 . 3217) (symbol 3212 . 3216) (punctuation 3200 . 3201) (symbol 3181 . 3191) (punctuation 3180 . 3181) (punctuation 3179 . 3180) (symbol 3170 . 3179) (TYPENAME 3161 . 3169) (TYPEDEF 3153 . 3160) (punctuation 2103 . 2104) (symbol 2091 . 2096) (punctuation 2090 . 2091) (punctuation 2089 . 2090) (symbol 2080 . 2089) (punctuation 2078 . 2079) (symbol 2075 . 2077) (TYPENAME 2066 . 2074) (punctuation 2056 . 2057) (symbol 2051 . 2056) (punctuation 2050 . 2051) (punctuation 2049 . 2050) (symbol 2040 . 2049) (punctuation 2038 . 2039) (symbol 2035 . 2037) (TYPENAME 2026 . 2034) (punctuation 2016 . 2017) (symbol 2011 . 2016) (punctuation 2010 . 2011) (punctuation 2009 . 2010) (symbol 2000 . 2009) (punctuation 1998 . 1999) (symbol 1995 . 1997) (TYPENAME 1986 . 1994) (punctuation 1976 . 1977) (symbol 1971 . 1976) (punctuation 1970 . 1971) (punctuation 1969 . 1970) (symbol 1960 . 1969) (punctuation 1958 . 1959) (symbol 1955 . 1957) (TYPENAME 1946 . 1954) (punctuation 1936 . 1937) (symbol 1931 . 1936) (punctuation 1930 . 1931) (punctuation 1929 . 1930) (symbol 1920 . 1929) (punctuation 1918 . 1919) (symbol 1915 . 1917) (TYPENAME 1906 . 1914) (punctuation 1896 . 1897) (symbol 1891 . 1896) (punctuation 1890 . 1891) (punctuation 1889 . 1890) (symbol 1880 . 1889) (punctuation 1878 . 1879) (symbol 1875 . 1877) (TYPENAME 1866 . 1874) (punctuation 1849 . 1850) (symbol 1840 . 1849) (TYPENAME 1831 . 1839) (punctuation 1746 . 1747) (TEMPLATE 1737 . 1745) (semantic-list 1691 . 1703) (symbol 1659 . 1691) (semantic-list 1623 . 1652) (symbol 1591 . 1623) (semantic-list 1564 . 1584) (symbol 1532 . 1564) (semantic-list 1505 . 1525) (symbol 1473 . 1505) (semantic-list 1454 . 1466) (symbol 1422 . 1454) (semantic-list 1400 . 1415) (symbol 1368 . 1400))
+      :lexical-table 
+        '(("BOOST_SIGNALS2_SIGNAL_TYPE_HPP")
+          ("BOOST_PARAMETER_MAX_ARITY" . ((number "7" 847 . 848)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_SHARED_CONNECTION_BLOCK_HPP" variable (:constant-flag t) nil [369 411])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [413 444])
+            ("boost/signals2/connection.hpp" include (:system-flag t) nil [445 485])
+            ("boost/weak_ptr.hpp" include (:system-flag t) nil [486 515])
+            ("boost" type
+               (:members 
+                  ( ("signals2" type
+                       (:members 
+                          ( ("shared_connection_block" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [604 611])
+                                    ("shared_connection_block" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("conn" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :default-value "signals2::connection()"
+                                                :type ("signals2::connection" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [642 699])
+                                            ("initially_blocked" variable
+                                               (:default-value "true"
+                                                :type "bool")
+                                                (reparse-symbol arg-sub-list) [709 738]))                                          
+                                        :type ("shared_connection_block" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [618 853])
+                                    ("block" function (:type "void") (reparse-symbol classsubparts) [860 1333])
+                                    ("unblock" function (:type "void") (reparse-symbol classsubparts) [1340 1396])
+                                    ("blocking" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [1403 1525])
+                                    ("connection" function
+                                       (:methodconst-flag t
+                                        :type ("signals2::connection" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1532 1647])
+                                    ("private" label nil (reparse-symbol classsubparts) [1652 1660])
+                                    ("_weak_connection_body" variable (:type ("boost::weak_ptr" type
+                                         (:template-specifier 
+                                            ( ("detail::connection_body_base" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1667 1735])
+                                    ("_blocker" variable (:type ("shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("void" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1742 1768]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [564 1775]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [537 1779]))                  
+                :type "namespace")
+                nil [517 1781]))          
+      :file "shared_connection_block.hpp"
+      :pointmax 1859
+      :fsize 1858
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_SIGNALS2_SHARED_CONNECTION_BLOCK_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_POSTCONSTRUCTIBLE_HPP" variable (:constant-flag t) nil [618 654])
+            ("boost" type
+               (:members 
+                  ( ("shared_ptr" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :prototype t)
+                        (reparse-symbol namespacesubparts) [676 714])
+                    ("signals2" type
+                       (:members 
+                          ( ("postconstructible_adl_barrier" type
+                               (:members 
+                                  ( ("postconstructible" type
+                                       (:prototype t
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [797 821]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [745 827])
+                            ("detail" type
+                               (:members 
+                                  ( ("do_postconstruct" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("ptr" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("boost::signals2::postconstructible_adl_barrier::postconstructible" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [883 960]))                                          
+                                        :type "void")
+                                        (reparse-symbol namespacesubparts) [861 961]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [832 967])
+                            ("postconstructible_adl_barrier" type
+                               (:members 
+                                  ( ("postconstructible" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1083 1090])
+                                            ("do_postconstruct" function
+                                               (:prototype-flag t
+                                                :parent "detail"
+                                                :typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("ptr" variable
+                                                       (:pointer 1
+                                                        :constant-flag t
+                                                        :type ("postconstructible" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1136 1165]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1099 1166])
+                                            ("adl_postconstruct" function
+                                               (:template 
+                                                  ( ("T" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("sp" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("shared_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [1236 1260])
+                                                    ("p" variable
+                                                       (:pointer 1
+                                                        :type ("postconstructible" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1261 1282]))                                                  )
+                                                (reparse-symbol classsubparts) [1175 1332])
+                                            ("protected" label nil (reparse-symbol classsubparts) [1339 1349])
+                                            ("postconstructible" function
+                                               (:constructor-flag t
+                                                :type ("postconstructible" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [1358 1380])
+                                            ("postconstructible" function
+                                               (:destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1389 1420])
+                                            ("postconstruct" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1429 1462]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1045 1471]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [993 1477])
+                            ("postconstructible_adl_barrier::postconstructible" using (:type ("postconstructible_adl_barrier::postconstructible" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1525 1580]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [718 1585]))                  
+                :type "namespace")
+                nil [656 1587]))          
+      :file "postconstructible.hpp"
+      :pointmax 1636
+      :fsize 1635
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_SIGNALS2_POSTCONSTRUCTIBLE_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_PREDESTRUCTIBLE_HPP" variable (:constant-flag t) nil [609 643])
+            ("boost" type
+               (:members 
+                  ( ("signals2" type
+                       (:members 
+                          ( ("predestructing_deleter" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [692 742])
+                            ("predestructible_adl_barrier" type
+                               (:members 
+                                  ( ("predestructible" type
+                                       (:members 
+                                          ( ("protected" label nil (reparse-symbol classsubparts) [834 844])
+                                            ("predestructible" function
+                                               (:constructor-flag t
+                                                :type ("predestructible" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [853 873])
+                                            ("public" label nil (reparse-symbol classsubparts) [880 887])
+                                            ("adl_postconstruct" function
+                                               (:template 
+                                                  ( ("T" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("shared_ptr" type
+                                                             (:template-specifier 
+                                                                ( ("T" type nil nil nil))                                                                
+                                                              :type "class")
+                                                              nil nil))
+                                                        (reparse-symbol arg-sub-list) [957 979])
+                                                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [980 984]))                                                  )
+                                                (reparse-symbol classsubparts) [896 995])
+                                            ("adl_predestruct" function
+                                               (:typemodifiers ("friend")
+                                                :arguments 
+                                                  ( ("p" variable
+                                                       (:pointer 1
+                                                        :type ("predestructible" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1032 1051]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1004 1099])
+                                            ("predestructible" function
+                                               (:destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1108 1137])
+                                            ("predestruct" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1146 1177]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [798 1186]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [748 1192])
+                            ("predestructible_adl_barrier::predestructible" using (:type ("predestructible_adl_barrier::predestructible" type
+                                 (:prototype t
+                                  :type "class")
+                                  nil nil)) (reparse-symbol namespacesubparts) [1238 1289]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [665 1293]))                  
+                :type "namespace")
+                nil [645 1295]))          
+      :file "predestructible.hpp"
+      :pointmax 1342
+      :fsize 1341
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_SIGNALS2_PREDESTRUCTIBLE_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_EXPIRED_SLOT_HPP" variable (:constant-flag t) nil [358 389])
+            ("boost/smart_ptr/bad_weak_ptr.hpp" include (:system-flag t) nil [391 434])
+            ("boost" type
+               (:members 
+                  ( ("signals2" type
+                       (:members 
+                          ( ("expired_slot" type
+                               (:superclasses 
+                                  ( ("bad_weak_ptr" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [533 540])
+                                    ("what" function
+                                       (:methodconst-flag t
+                                        :pointer 1
+                                        :typemodifiers ("virtual")
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [547 652]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [483 659]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [456 663]))                  
+                :type "namespace")
+                nil [436 665]))          
+      :file "expired_slot.hpp"
+      :pointmax 732
+      :fsize 731
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_SIGNALS2_EXPIRED_SLOT_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_CONNECTION_HPP" variable (:constant-flag t) nil [471 500])
+            ("boost/function.hpp" include (:system-flag t) nil [502 531])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [532 561])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [562 594])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [595 626])
+            ("boost/signals2/detail/null_output_iterator.hpp" include (:system-flag t) nil [627 684])
+            ("boost/signals2/detail/unique_lock.hpp" include (:system-flag t) nil [685 733])
+            ("boost/signals2/slot.hpp" include (:system-flag t) nil [734 768])
+            ("boost/weak_ptr.hpp" include (:system-flag t) nil [769 798])
+            ("boost" type
+               (:members 
+                  ( ("signals2" type
+                       (:members 
+                          ( ("null_deleter" function
+                               (:typemodifiers ("extern" "inline")
+                                :arguments 
+                                  ( ("" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type "void")
+                                        (reparse-symbol arg-sub-list) [879 891]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [847 894])
+                            ("detail" type
+                               (:members 
+                                  ( ("connection_body_base" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [969 976])
+                                            ("connection_body_base" function
+                                               (:constructor-flag t
+                                                :type ("connection_body_base" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [985 1055])
+                                            ("connection_body_base" function
+                                               (:destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [1064 1098])
+                                            ("disconnect" function (:type "void") (reparse-symbol classsubparts) [1107 1238])
+                                            ("nolock_disconnect" function (:type "void") (reparse-symbol classsubparts) [1247 1321])
+                                            ("connected" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :methodconst-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [1330 1365])
+                                            ("get_blocker" function (:type ("shared_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("void" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [1374 1725])
+                                            ("blocked" function
+                                               (:methodconst-flag t
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [1734 1817])
+                                            ("nolock_nograb_blocked" function
+                                               (:methodconst-flag t
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [1826 1946])
+                                            ("nolock_nograb_connected" function
+                                               (:methodconst-flag t
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [1955 2012])
+                                            ("lock" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2073 2097])
+                                            ("unlock" function
+                                               (:pure-virtual-flag t
+                                                :prototype-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2106 2132])
+                                            ("protected" label nil (reparse-symbol classsubparts) [2140 2150])
+                                            ("_connected" variable
+                                               (:typemodifiers ("mutable")
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2160 2184])
+                                            ("_weak_blocker" variable (:type ("weak_ptr" type
+                                                 (:template-specifier 
+                                                    ( ("void" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol classsubparts) [2193 2222]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [928 2231])
+                                    ("connection_body" type
+                                       (:template 
+                                          ( ("GroupKey" type (:type "class") nil nil)
+                                            ("SlotType" type (:type "class") nil nil)
+                                            ("Mutex" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2373 2380])
+                                            ("mutex_type" type
+                                               (:typedef ("Mutex" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2389 2414])
+                                            ("connection_body" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("slot_in" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("SlotType" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2439 2463]))                                                  
+                                                :type ("connection_body" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2423 2508])
+                                            ("connection_body" function
+                                               (:destructor-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2517 2546])
+                                            ("connected" function
+                                               (:methodconst-flag t
+                                                :typemodifiers ("virtual")
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2555 2774])
+                                            ("group_key" function
+                                               (:methodconst-flag t
+                                                :constant-flag t
+                                                :type ("GroupKey" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [2783 2837])
+                                            ("set_group_key" function
+                                               (:arguments 
+                                                  ( ("key" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("GroupKey" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [2865 2885]))                                                  
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [2846 2905])
+                                            ("nolock_slot_expired" function
+                                               (:methodconst-flag t
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [2914 3119])
+                                            ("nolock_grab_tracked_objects" function
+                                               (:template 
+                                                  ( ("OutputIterator" type (:type "class") nil nil))                                                  
+                                                :type "void"
+                                                :arguments 
+                                                  ( ("inserter" variable (:type ("OutputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3205 3229]))                                                  
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [3128 3864])
+                                            ("lock" function
+                                               (:typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3917 3981])
+                                            ("unlock" function
+                                               (:typemodifiers ("virtual")
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [3990 4058])
+                                            ("slot" variable (:type ("SlotType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4067 4081])
+                                            ("private" label nil (reparse-symbol classsubparts) [4088 4096])
+                                            ("_mutex" variable
+                                               (:typemodifiers ("mutable")
+                                                :type ("mutex_type" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [4105 4131])
+                                            ("_group_key" variable (:type ("GroupKey" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4140 4160]))                                          
+                                        :superclasses 
+                                          ( ("connection_body_base" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          )
+                                        (reparse-symbol namespacesubparts) [2239 4169]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [899 4175])
+                            ("shared_connection_block" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [4181 4211])
+                            ("connection" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [4244 4251])
+                                    ("shared_connection_block" friend nil (reparse-symbol classsubparts) [4258 4294])
+                                    ("connection" function
+                                       (:constructor-flag t
+                                        :type ("connection" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4303 4318])
+                                    ("connection" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("connection" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [4336 4360]))                                          
+                                        :type ("connection" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4325 4421])
+                                    ("connection" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("connectionBody" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("boost::weak_ptr" type
+                                                     (:template-specifier 
+                                                        ( ("detail::connection_body_base" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4439 4507]))                                          
+                                        :type ("connection" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [4428 4563])
+                                    ("connection" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4570 4586])
+                                    ("disconnect" function
+                                       (:methodconst-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [4593 4812])
+                                    ("connected" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [4819 5049])
+                                    ("blocked" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [5056 5281])
+                                    ("==" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("connection" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5304 5328]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [5288 5619])
+                                    ("!=" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("connection" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5642 5666]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [5626 5722])
+                                    ("<" function
+                                       (:methodconst-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("connection" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [5744 5768]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [5729 6058])
+                                    ("swap" function
+                                       (:arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :type ("connection" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6075 6093]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6065 6200])
+                                    ("protected" label nil (reparse-symbol classsubparts) [6205 6215])
+                                    ("_weak_connection_body" variable (:type ("boost::weak_ptr" type
+                                         (:template-specifier 
+                                            ( ("detail::connection_body_base" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [6223 6291]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [4217 6298])
+                            ("swap" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("conn1" variable
+                                       (:reference 1
+                                        :type ("connection" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6320 6338])
+                                    ("conn2" variable
+                                       (:reference 1
+                                        :type ("connection" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6339 6357]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [6303 6394])
+                            ("scoped_connection" type
+                               (:superclasses 
+                                  ( ("connection" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [6453 6460])
+                                    ("scoped_connection" function
+                                       (:constructor-flag t
+                                        :type ("scoped_connection" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6467 6489])
+                                    ("scoped_connection" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("connection" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6514 6538]))                                          
+                                        :type ("scoped_connection" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6496 6574])
+                                    ("scoped_connection" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6581 6639])
+                                    ("=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("connection" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6675 6697]))                                          
+                                        :type ("scoped_connection" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6646 6793])
+                                    ("release" function (:type ("connection" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6800 6944])
+                                    ("private" label nil (reparse-symbol classsubparts) [6949 6957])
+                                    ("scoped_connection" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("scoped_connection" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [6982 7013]))                                          
+                                        :type ("scoped_connection" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [6964 7014])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("rhs" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("scoped_connection" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [7050 7079]))                                          
+                                        :type ("scoped_connection" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [7021 7080]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [6400 7087])
+                            ("swap" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("conn1" variable
+                                       (:reference 1
+                                        :type ("scoped_connection" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7257 7282])
+                                    ("conn2" variable
+                                       (:reference 1
+                                        :type ("scoped_connection" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7283 7308]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [7240 7345]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [820 7349]))                  
+                :type "namespace")
+                nil [800 7351]))          
+      :file "connection.hpp"
+      :pointmax 7394
+      :fsize 7393
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax '((punctuation 4294 . 4295))
+      :lexical-table 
+        '(("BOOST_SIGNALS2_CONNECTION_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_OPTIONAL_LAST_VALUE_HPP" variable (:constant-flag t) nil [437 475])
+            ("boost/optional.hpp" include (:system-flag t) nil [477 506])
+            ("boost/signals2/expired_slot.hpp" include (:system-flag t) nil [507 549])
+            ("boost" type
+               (:members 
+                  ( ("signals2" type
+                       (:members 
+                          ( ("optional_last_value" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [660 667])
+                                    ("result_type" type
+                                       (:typedef ("optional" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [674 706])
+                                    ("()" function
+                                       (:template 
+                                          ( ("InputIterator" type (:type "class") nil nil))                                          
+                                        :type ("optional" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :arguments 
+                                          ( ("first" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [778 798])
+                                            ("last" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [799 818]))                                          
+                                        :operator-flag t
+                                        :methodconst-flag t)
+                                        (reparse-symbol classsubparts) [714 1065]))                                  )
+                                (reparse-symbol namespacesubparts) [597 1072])
+                            ("optional_last_value" type
+                               (:type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1137 1144])
+                                    ("result_type" type
+                                       (:typedef ("void")
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1151 1176])
+                                    ("()" function
+                                       (:template 
+                                          ( ("InputIterator" type (:type "class") nil nil))                                          
+                                        :type ("result_type" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("first" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1247 1267])
+                                            ("last" variable (:type ("InputIterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1268 1287]))                                          
+                                        :operator-flag t
+                                        :methodconst-flag t)
+                                        (reparse-symbol classsubparts) [1183 1493]))                                  
+                                :template-specifier 
+                                  ( ("void" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [1078 1500]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [571 1504]))                  
+                :type "namespace")
+                nil [551 1528]))          
+      :file "optional_last_value.hpp"
+      :pointmax 1597
+      :fsize 1596
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_SIGNALS2_OPTIONAL_LAST_VALUE_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_MUTEX_HPP" variable (:constant-flag t) nil [507 531])
+            ("boost/config.hpp" include (:system-flag t) nil [648 675])
+            ("boost/signals2/detail/lwm_nop.hpp" include (:system-flag t) nil [709 754]))          
+      :file "mutex.hpp"
+      :pointmax 1083
+      :fsize 1082
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax '((symbol 1023 . 1031) (symbol 1013 . 1022) (symbol 1000 . 1012) (symbol 994 . 999) (punctuation 991 . 992))
+      :lexical-table 
+        '(("BOOST_SIGNALS2_MUTEX_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_SLOT_HPP" variable (:constant-flag t) nil [348 371])
+            ("boost/bind.hpp" include (:system-flag t) nil [373 398])
+            ("boost/config.hpp" include (:system-flag t) nil [399 426])
+            ("boost/function.hpp" include (:system-flag t) nil [427 456])
+            ("boost/mpl/identity.hpp" include (:system-flag t) nil [457 490])
+            ("boost/ref.hpp" include (:system-flag t) nil [491 515])
+            ("boost/signals2/detail/signals_common.hpp" include (:system-flag t) nil [516 567])
+            ("boost/signals2/detail/signals_common_macros.hpp" include (:system-flag t) nil [568 626])
+            ("boost/signals2/detail/tracked_objects_visitor.hpp" include (:system-flag t) nil [627 687])
+            ("boost/signals2/slot_base.hpp" include (:system-flag t) nil [688 727])
+            ("boost/visit_each.hpp" include (:system-flag t) nil [728 759])
+            ("boost/weak_ptr.hpp" include (:system-flag t) nil [760 789])
+            ("boost/signals2/variadic_slot.hpp" include (:system-flag t) nil [886 929]))          
+      :file "slot.hpp"
+      :pointmax 972
+      :fsize 971
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_SIGNALS2_SLOT_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_VARIADIC_SIGNAL_HPP" variable (:constant-flag t) nil [544 578])
+            ("boost/preprocessor/control/expr_if.hpp" include (:system-flag t) nil [580 629])
+            ("boost/signals2/detail/variadic_arg_type.hpp" include (:system-flag t) nil [630 684])
+            ("boost/signals2/detail/variadic_slot_invoker.hpp" include (:system-flag t) nil [685 743])
+            ("boost/type_traits/function_traits.hpp" include (:system-flag t) nil [744 792])
+            ("boost" type
+               (:members 
+                  ( ("signals2" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("variadic_extended_signature" type
+                                       (:template 
+                                          ( ("Signature" type (:type "class") nil nil))                                          
+                                        :type "class"
+                                        :prototype t)
+                                        (reparse-symbol namespacesubparts) [870 933]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [841 1209]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [814 1233]))                  
+                :type "namespace")
+                nil [794 1257])
+            ("boost/signals2/detail/signal_template.hpp" include (:system-flag t) nil [1278 1330]))          
+      :file "variadic_signal.hpp"
+      :pointmax 1377
+      :fsize 1376
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax '((punctuation 1202 . 1203) (semantic-list 1082 . 1202) (punctuation 1074 . 1075) (semantic-list 1065 . 1074) (symbol 1063 . 1064) (punctuation 1062 . 1063) (symbol 1035 . 1062) (CLASS 1029 . 1034) (punctuation 1019 . 1020) (symbol 1015 . 1019) (punctuation 1013 . 1014) (punctuation 1012 . 1013) (punctuation 1011 . 1012) (TYPENAME 1002 . 1010) (punctuation 1000 . 1001) (symbol 999 . 1000) (TYPENAME 990 . 998) (punctuation 989 . 990) (TEMPLATE 981 . 989))
+      :lexical-table 
+        '(("BOOST_SIGNALS2_VARIADIC_SIGNAL_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_SLOT_BASE_HPP" variable (:constant-flag t) nil [423 451])
+            ("boost/any.hpp" include (:system-flag t) nil [453 477])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [478 509])
+            ("boost/weak_ptr.hpp" include (:system-flag t) nil [510 539])
+            ("boost/signals2/detail/foreign_ptr.hpp" include (:system-flag t) nil [540 588])
+            ("boost/signals2/expired_slot.hpp" include (:system-flag t) nil [589 631])
+            ("boost/signals2/signal_base.hpp" include (:system-flag t) nil [632 673])
+            ("boost/throw_exception.hpp" include (:system-flag t) nil [674 710])
+            ("boost/variant/apply_visitor.hpp" include (:system-flag t) nil [711 753])
+            ("boost/variant/variant.hpp" include (:system-flag t) nil [754 790])
+            ("vector" include (:system-flag t) nil [791 808])
+            ("boost" type
+               (:members 
+                  ( ("signals2" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("tracked_objects_visitor" type
+                                       (:prototype t
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [886 916])
+                                    ("void_weak_ptr_variant" type
+                                       (:typedef ("boost::variant" type
+                                             (:template-specifier 
+                                                ( ("boost::weak_ptr" type (:template-specifier 
+                                                    ( ("void" type nil nil nil))                                                    ) nil nil)
+                                                  ("detail::foreign_void_weak_ptr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [924 1024])
+                                    ("void_shared_ptr_variant" type
+                                       (:typedef ("boost::variant" type
+                                             (:template-specifier 
+                                                ( ("boost::shared_ptr" type (:template-specifier 
+                                                    ( ("void" type nil nil nil))                                                    ) nil nil)
+                                                  ("detail::foreign_void_shared_ptr" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol namespacesubparts) [1031 1137])
+                                    ("lock_weak_ptr_visitor" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1186 1193])
+                                            ("result_type" type
+                                               (:typedef ("void_shared_ptr_variant" type (:type "class") nil nil)
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1202 1246])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("WeakPtr" type (:type "class") nil nil))                                                  
+                                                :type ("result_type" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("wp" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("WeakPtr" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1313 1331]))                                                  
+                                                :operator-flag t
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [1255 1385]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1144 1394])
+                                    ("expired_weak_ptr_visitor" type
+                                       (:members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [1446 1453])
+                                            ("result_type" type
+                                               (:typedef ("bool")
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [1462 1487])
+                                            ("()" function
+                                               (:template 
+                                                  ( ("WeakPtr" type (:type "class") nil nil))                                                  
+                                                :type "bool"
+                                                :arguments 
+                                                  ( ("wp" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("WeakPtr" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [1547 1565]))                                                  
+                                                :operator-flag t
+                                                :methodconst-flag t)
+                                                (reparse-symbol classsubparts) [1496 1622]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1401 1631]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [857 1637])
+                            ("slot_base" type
+                               (:members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1669 1676])
+                                    ("tracked_container_type" type
+                                       (:typedef ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("detail::void_weak_ptr_variant" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1683 1757])
+                                    ("locked_container_type" type
+                                       (:typedef ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("detail::void_shared_ptr_variant" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [1764 1839])
+                                    ("tracked_objects" function
+                                       (:methodconst-flag t
+                                        :constant-flag t
+                                        :type ("tracked_container_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1847 1927])
+                                    ("lock" function
+                                       (:methodconst-flag t
+                                        :type ("locked_container_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1934 2447])
+                                    ("expired" function
+                                       (:methodconst-flag t
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [2454 2746])
+                                    ("protected" label nil (reparse-symbol classsubparts) [2751 2761])
+                                    ("detail" friend nil (reparse-symbol classsubparts) [2768 2787])
+                                    ("tracked_objects_visitor" variable (:type "int") (reparse-symbol classsubparts) [2789 2813])
+                                    ("track_signal" function
+                                       (:arguments 
+                                          ( ("signal" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("signal_base" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2839 2865]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [2821 2938])
+                                    ("_tracked_objects" variable (:type ("tracked_container_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2946 2986]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1643 2993]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [830 2997]))                  
+                :type "namespace")
+                nil [810 2999]))          
+      :file "slot_base.hpp"
+      :pointmax 3063
+      :fsize 3062
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax '((punctuation 2788 . 2789) (punctuation 2787 . 2788))
+      :lexical-table 
+        '(("BOOST_SIGNALS2_SLOT_BASE_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_SIGNAL_BASE_HPP" variable (:constant-flag t) nil [357 387])
+            ("boost/noncopyable.hpp" include (:system-flag t) nil [389 421])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [422 453])
+            ("boost" type
+               (:members 
+                  ( ("signals2" type
+                       (:members 
+                          ( ("slot_base" type
+                               (:prototype t
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [500 516])
+                            ("signal_base" type
+                               (:superclasses 
+                                  ( ("noncopyable" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [571 578])
+                                    ("slot_base" friend nil (reparse-symbol classsubparts) [585 607])
+                                    ("signal_base" function
+                                       (:destructor-flag t
+                                        :typemodifiers ("virtual")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [616 641])
+                                    ("protected" label nil (reparse-symbol classsubparts) [646 656])
+                                    ("lock_pimpl" function
+                                       (:pure-virtual-flag t
+                                        :prototype-flag t
+                                        :methodconst-flag t
+                                        :typemodifiers ("virtual")
+                                        :type ("shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("void" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [663 711]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [522 718]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [475 722]))                  
+                :type "namespace")
+                nil [455 750]))          
+      :file "signal_base.hpp"
+      :pointmax 816
+      :fsize 815
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax '((punctuation 607 . 608))
+      :lexical-table 
+        '(("BOOST_SIGNALS2_SIGNAL_BASE_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_VARIADIC_SLOT_HPP" variable (:constant-flag t) nil [332 364])
+            ("boost/signals2/detail/variadic_arg_type.hpp" include (:system-flag t) nil [366 420])
+            ("BOOST_SIGNALS2_SLOT_N_BINDING_CONSTRUCTORS" variable (:constant-flag t) nil [430 472])
+            ("boost/signals2/detail/slot_template.hpp" include (:system-flag t) nil [603 653]))          
+      :file "variadic_slot.hpp"
+      :pointmax 697
+      :fsize 696
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("BOOST_SIGNALS2_SLOT_N_BINDING_CONSTRUCTORS" . 
+              ((TEMPLATE "template" 477 . 485) (punctuation "<" 485 . 486) (TYPENAME "typename" 486 . 494) (punctuation "." 495 . 496) (punctuation "." 496 . 497) (punctuation "." 497 . 498) (symbol "BindArgs" 499 . 507) (punctuation ">" 507 . 508) (symbol "slot" 509 . 513) (semantic-list "(const BindArgs & ... args)" 513 . 540) (semantic-list "{ \\
+    init_slot_function(boost::bind(args...)); \\
+  }" 545 . 600)))
+          ("BOOST_SIGNALS2_VARIADIC_SLOT_HPP")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("BOOST_SIGNALS2_TRACKABLE_HPP" variable (:constant-flag t) nil [567 595])
+            ("boost/assert.hpp" include (:system-flag t) nil [597 624])
+            ("boost/shared_ptr.hpp" include (:system-flag t) nil [625 656])
+            ("boost" type
+               (:members 
+                  ( ("signals2" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("tracked_objects_visitor" type
+                                       (:prototype t
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [734 764]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [703 770])
+                            ("trackable" type
+                               (:members 
+                                  ( ("protected" label nil (reparse-symbol classsubparts) [797 807])
+                                    ("trackable" function
+                                       (:constructor-flag t
+                                        :type ("trackable" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [814 864])
+                                    ("trackable" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("trackable" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [881 899]))                                          
+                                        :type ("trackable" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [871 938])
+                                    ("=" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("trackable" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [966 984]))                                          
+                                        :type ("trackable" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [945 1024])
+                                    ("trackable" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [1031 1046])
+                                    ("private" label nil (reparse-symbol classsubparts) [1051 1059])
+                                    ("detail" friend nil (reparse-symbol classsubparts) [1066 1085])
+                                    ("tracked_objects_visitor" variable (:type "int") (reparse-symbol classsubparts) [1087 1111])
+                                    ("get_shared_ptr" function
+                                       (:methodconst-flag t
+                                        :constant-flag t
+                                        :type ("shared_ptr" type
+                                             (:template-specifier 
+                                                ( ("void" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol classsubparts) [1118 1211])
+                                    ("_tracked_ptr" variable (:type ("shared_ptr" type
+                                         (:template-specifier 
+                                            ( ("void" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [1219 1249]))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [775 1256]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [678 1260]))                  
+                :type "namespace")
+                nil [658 1288]))          
+      :file "trackable.hpp"
+      :pointmax 1352
+      :fsize 1351
+      :lastmodtime '(21413 1116 0 0)
+      :unmatched-syntax '((punctuation 1086 . 1087) (punctuation 1085 . 1086))
+      :lexical-table 
+        '(("BOOST_SIGNALS2_TRACKABLE_HPP")
+          )
+))
+  :file "!usr!include!boost!signals2!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

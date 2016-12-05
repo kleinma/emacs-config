@@ -1,0 +1,8 @@
+/home/snowmower/ros_ws/catkin/src/snowmower_obstacles/src/obstacle_avoidance.py
+/home/snowmower/ros_ws/catkin/src/snowmower_obstacles/src/#obstacle_avoidance.py#
+/home/snowmower/ros_ws/catkin/src/snowmower_obstacles/src/obstacle_detection.py
+/home/snowmower/ros_ws/catkin/src/snowmower_obstacles/src/#obstacle_detection.py#
+/home/snowmower/ros_ws/catkin/src/snowmower_obstacles/launch/nav_launcher_w_ob_avoid.launch
+/home/snowmower/ros_ws/catkin/src/snowmower_obstacles/launch/#nav_launcher_w_ob_avoid.launch#
+/home/snowmower/ros_ws/catkin/src/snowmower_sim/launch/single_i.launch
+/home/snowmower/ros_ws/catkin/src/snowmower_sim/launch/#single_i.launch#

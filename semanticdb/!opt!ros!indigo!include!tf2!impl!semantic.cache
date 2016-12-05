@@ -1,0 +1,109 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TF2_IMPL_CONVERT_H" variable (:constant-flag t) nil [1660 1678])
+            ("tf2" type
+               (:members 
+                  ( ("impl" type
+                       (:members 
+                          ( ("Converter" type
+                               (:template 
+                                  ( ("bool" type (:typevar "IS_MESSAGE_A") nil nil)
+                                    ("bool" type (:typevar "IS_MESSAGE_B") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("public" label nil (reparse-symbol classsubparts) [1780 1787])
+                                    ("convert" function
+                                       (:template 
+                                          ( ("A" type (:type "class") nil nil)
+                                            ("B" type (:type "class") nil nil))                                          
+                                        :type "void"
+                                        :arguments 
+                                          ( ("a" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("A" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1845 1856])
+                                            ("b" variable
+                                               (:reference 1
+                                                :type ("B" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1857 1862]))                                          
+                                        :typemodifiers ("static")
+                                        :prototype-flag t)
+                                        (reparse-symbol classsubparts) [1790 1863]))                                  )
+                                (reparse-symbol namespacesubparts) [1714 1866])
+                            ("convert" function
+                               (:template 
+                                  ( ("A" type (:type "class") nil nil)
+                                    ("B" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("A" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2422 2433])
+                                    ("b" variable
+                                       (:reference 1
+                                        :type ("B" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2434 2439]))                                  
+                                :typemodifiers ("inline")
+                                :parent "Converter")
+                                (reparse-symbol namespacesubparts) [2344 2460])
+                            ("convert" function
+                               (:template 
+                                  ( ("A" type (:type "class") nil nil)
+                                    ("B" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("A" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2552 2563])
+                                    ("b" variable
+                                       (:reference 1
+                                        :type ("B" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2564 2569]))                                  
+                                :typemodifiers ("inline")
+                                :parent "Converter")
+                                (reparse-symbol namespacesubparts) [2474 2589])
+                            ("convert" function
+                               (:template 
+                                  ( ("A" type (:type "class") nil nil)
+                                    ("B" type (:type "class") nil nil))                                  
+                                :type "void"
+                                :arguments 
+                                  ( ("a" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("A" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2682 2693])
+                                    ("b" variable
+                                       (:reference 1
+                                        :type ("B" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2694 2699]))                                  
+                                :typemodifiers ("inline")
+                                :parent "Converter")
+                                (reparse-symbol namespacesubparts) [2603 2727]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1696 2730]))                  
+                :type "namespace")
+                nil [1680 2732]))          
+      :file "convert.h"
+      :pointmax 2762
+      :fsize 2761
+      :lastmodtime '(22233 59570 0 0)
+      :unmatched-syntax '((punctuation 2601 . 2602) (punctuation 2600 . 2601) (TEMPLATE 2591 . 2599) (punctuation 2472 . 2473) (punctuation 2471 . 2472) (TEMPLATE 2462 . 2470) (punctuation 2342 . 2343) (punctuation 2341 . 2342) (TEMPLATE 2332 . 2340))
+      :lexical-table 
+        '(("TF2_IMPL_CONVERT_H")
+          )
+))
+  :file "!opt!ros!indigo!include!tf2!impl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

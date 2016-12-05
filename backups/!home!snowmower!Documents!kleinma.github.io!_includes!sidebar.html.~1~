@@ -1,0 +1,34 @@
+<div class="container">
+    <header class="three columns">
+        <img src="{{ site.baseurl }}static/img/profile.png" class="me">
+        <h1>{{ site.name }}</h1>
+        <p>
+            <a href="{{ site.tel_full }}">{{ site.tel }}</a>
+        </p>
+        <address>
+            <a href="{{ site.google_maps }}">
+                {{ site.address }}<br/>
+                {{ site.city }}, {{site.state}}<br/>
+                {{ site.postcode }}<br/>
+                {{ site.country }}
+            </a>
+        </address>
+        <p>
+            <a href="{{ site.website_full }}">{{ site.website }}</a><br/>
+        </p>
+        <p>
+            <a href="{{ site.email_full }}">{{ site.email }}</a><br/>
+            <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i> Github</a> /
+            <a href="https://facebook.com/{{ site.facebook }}"><i class="fa fa-facebook"></i> Facebook</a>
+        </p>
+    </header>
+    <div class="thirteen columns clearfix">
+
+        {{ content }}
+
+    <footer class="thirteen columns">
+        <p>© All rights reserved. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and
+            <a href="https://www.github.com/biomadeira/vitae">vitae</a> with ♥</p>
+    </footer>
+    </div>
+</div>

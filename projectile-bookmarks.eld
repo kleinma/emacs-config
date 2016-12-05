@@ -1,0 +1,1 @@
+("~/ros_ws/catkin/src/stage_ros/" "~/ros_ws/catkin/src/lidar_dcnn/" "~/" "~/ros_ws/catkin/src/snowmower_sim/" "~/Code/stage4/Stage/" "~/ros_ws/catkin/src/snowmower_localization/")

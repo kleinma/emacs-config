@@ -1,0 +1,27 @@
+import matplotlib.pyplot as plt
+import matplotlib.colors as col
+import numpy as np
+
+plt.figure(0)
+for x in xrange(rn.N):
+    for y in xrange(rn.N):
+        plt.subplot(rn.N,1,x+1)
+        plt.plot(rn.time[rn.N*x+y,:].T,rn.test[rn.N*x+y,:].T,label="h2="+str(rn.hidden_neurons[y]))
+    if x == rn.N-1:
+        plt.legend(loc='lower right')
+        plt.xlabel('Training Time')
+    plt.ylabel('Percent Correct')
+    plt.title("h1="+str(rn.hidden_neurons[x]))
+    plt.xlim(xmax=10)
+
+time_to_ninety = np.zeros((rn.N,rn.N))
+for x in xrange(rn.N):
+    for y in xrange(rn.N):
+        # time_to_ninety[x,y] = rn.time[np.argmax(rn.N*x+y,rn.test[rn.N*x+y]>.90)]
+        time_to_ninety[x,y] = rn.time[rn.N*x+y,np.argmax(rn.test[rn.N*x+y,:]>.9)]
+        
+fig = plt.figure()
+imgplot = plt.imshow(Z, interpolation="none")
+plt.gca().invert_yaxis()
+plt.colorbar()
+plt.show()

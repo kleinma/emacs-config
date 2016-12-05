@@ -1,0 +1,25 @@
+* EECS 600 Project
+** Rewrite a minimum stageros to move blocks around and scan them with lidar
+*** TODO Load a world file with a robot with a lidar.
+*** TODO Access the lidar output, write it to file.
+*** TODO Add simple block model to the simulation.
+*** TODO Read from A-Z.csv and load those blocks into simulation.
+*** TODO Change angle, distance, rotation, size, and noise level or blocks
+**** noise added to each vertex -- angle - uniform, radius -gaussian w/ std = noise level.
+*** TODO Cycle through
+**** block type
+**** angle (-90 on the +y-axis, 0 on the x-axis, 90 on the -y-axis)
+**** distance (from lidar)
+**** rotation (angle with respect to angle above)
+**** size (1 = text height of 1 m. Actual text is sometimes a bit larger.)
+**** noise level (angle - uniform(0,180), distance - normal(0,noise level))
+*** TODO At each instance in the cycle above, record a scan
+*** TODO Save data to a .csv or binary file
+**** Data structure: block type, angle, distance, rotation, size, noise level, [scan] 
+
+** Write TensorFlow DCNN
+
+* Useful Commands
+M-shift-RET -- Make new TODO item
+C-c C-t -- Mark TODO item as done with timestamp
+shift-TAB -- cycle through heading expansion levels

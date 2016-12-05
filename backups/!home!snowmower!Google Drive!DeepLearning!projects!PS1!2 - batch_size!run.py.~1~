@@ -1,0 +1,7 @@
+import matplotlib.pyplot as plt
+
+import fully_connected_feed_overtrain as fc
+
+step_vec, train_prec, val_prec, test_prec = fc.run_training()
+plt.plot(step_vec, train_prec, step_vec, val_prec, step_vec, test_prec)
+plt.show()

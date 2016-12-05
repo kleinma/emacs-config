@@ -1,0 +1,94 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("ros/ros.h" include (:system-flag t) nil [1427 1447])
+            ("tf/transform_broadcaster.h" include (:system-flag t) nil [1448 1485])
+            ("sensor_msgs/Imu.h" include (:system-flag t) nil [1486 1514])
+            ("snowmower_msgs/EncMsg.h" include (:system-flag t) nil [1515 1549])
+            ("snowmower_msgs/DecaWaveMsg.h" include (:system-flag t) nil [1550 1589])
+            ("nav_msgs/Odometry.h" include (:system-flag t) nil [1590 1620])
+            ("snowmower_localization/ekf_node.h" include nil nil [1621 1665])
+            ("dwSubCB" function
+               (:parent "EkfNode"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("snowmower_msgs::DecaWaveMsg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1719 1758]))                  
+                :type "void")
+                nil [1697 2407])
+            ("encSubCB" function
+               (:parent "EkfNode"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("snowmower_msgs::EncMsg" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2467 2501]))                  
+                :type "void")
+                nil [2444 3328])
+            ("imuSubCB" function
+               (:parent "EkfNode"
+                :arguments 
+                  ( ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("sensor_msgs::Imu" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3378 3406]))                  
+                :type "void")
+                nil [3355 3955])
+            ("dtSystem" function
+               (:parent "EkfNode"
+                :arguments 
+                  ( ("currentSysTime" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4043 4068]))                  
+                :type "double")
+                nil [4018 4192])
+            ("dtEncoder" function
+               (:parent "EkfNode"
+                :arguments 
+                  ( ("currentEncTime" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4278 4303]))                  
+                :type "double")
+                nil [4252 4427])
+            ("publishState" function
+               (:parent "EkfNode"
+                :arguments 
+                  ( ("now" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4555 4569]))                  
+                :type "void")
+                nil [4528 8347])
+            ("init" function
+               (:parent "EkfNode"
+                :type "void")
+                nil [8378 16992])
+            ("EkfNode" function
+               (:constructor-flag t
+                :parent "EkfNode"
+                :type ("EkfNode" type (:type "class") nil nil))
+                nil [17013 17926])
+            ("EkfNode" function
+               (:destructor-flag t
+                :parent "EkfNode"
+                :type "void")
+                nil [17945 17969])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [17980 17989])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17990 18002]))                  
+                :type "int")
+                nil [17971 18154]))          
+      :file "ekf_node.cpp"
+      :pointmax 18155
+      :fsize 18154
+      :lastmodtime '(22189 34896 420462 890000)
+      :unmatched-syntax nil))
+  :file "!home!snowmower!ros_ws!catkin!src!snowmower_localization!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

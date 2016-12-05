@@ -1,0 +1,267 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TF2_MSGS_MESSAGE_FRAMEGRAPH_H" variable (:constant-flag t) nil [122 151])
+            ("ros/service_traits.h" include (:system-flag t) nil [153 184])
+            ("tf2_msgs/FrameGraphRequest.h" include (:system-flag t) nil [187 226])
+            ("tf2_msgs/FrameGraphResponse.h" include (:system-flag t) nil [227 267])
+            ("tf2_msgs" type
+               (:members 
+                  ( ("FrameGraph" type
+                       (:members 
+                          ( ("Request" type
+                               (:typedef ("FrameGraphRequest" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [313 347])
+                            ("Response" type
+                               (:typedef ("FrameGraphResponse" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [348 384])
+                            ("request" variable (:type ("Request" type (:type "class") nil nil)) (reparse-symbol classsubparts) [385 401])
+                            ("response" variable (:type ("Response" type (:type "class") nil nil)) (reparse-symbol classsubparts) [402 420])
+                            ("RequestType" type
+                               (:typedef ("Request" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [422 450])
+                            ("ResponseType" type
+                               (:typedef ("Response" type (:type "class") nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [451 481]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [292 485]))                  
+                :type "namespace")
+                nil [270 508])
+            ("ros" type
+               (:members 
+                  ( ("service_traits" type (:type "namespace") (reparse-symbol namespacesubparts) [549 2519]))                  
+                :type "namespace")
+                nil [533 2549]))          
+      :file "FrameGraph.h"
+      :pointmax 2608
+      :fsize 2607
+      :lastmodtime '(22385 49622 0 0)
+      :unmatched-syntax '((punctuation 2515 . 2516) (semantic-list 2325 . 2515) (punctuation 2323 . 2324) (symbol 2305 . 2323) (punctuation 2304 . 2305) (punctuation 2303 . 2304) (symbol 2295 . 2303) (punctuation 2294 . 2295) (punctuation 2293 . 2294) (punctuation 2291 . 2292) (symbol 2283 . 2291) (STRUCT 2276 . 2282) (punctuation 2274 . 2275) (punctuation 2273 . 2274) (TEMPLATE 2265 . 2273) (punctuation 2132 . 2133) (semantic-list 1944 . 2132) (punctuation 1942 . 1943) (symbol 1924 . 1942) (punctuation 1923 . 1924) (punctuation 1922 . 1923) (symbol 1914 . 1922) (punctuation 1913 . 1914) (punctuation 1912 . 1913) (punctuation 1910 . 1911) (symbol 1904 . 1910) (STRUCT 1897 . 1903) (punctuation 1895 . 1896) (punctuation 1894 . 1895) (TEMPLATE 1886 . 1894) (punctuation 1757 . 1758) (semantic-list 1568 . 1757) (punctuation 1566 . 1567) (symbol 1549 . 1566) (punctuation 1548 . 1549) (punctuation 1547 . 1548) (symbol 1539 . 1547) (punctuation 1538 . 1539) (punctuation 1537 . 1538) (punctuation 1535 . 1536) (symbol 1527 . 1535) (STRUCT 1520 . 1526) (punctuation 1518 . 1519) (punctuation 1517 . 1518) (TEMPLATE 1509 . 1517) (punctuation 1377 . 1378) (semantic-list 1190 . 1377) (punctuation 1188 . 1189) (symbol 1171 . 1188) (punctuation 1170 . 1171) (punctuation 1169 . 1170) (symbol 1161 . 1169) (punctuation 1160 . 1161) (punctuation 1159 . 1160) (punctuation 1157 . 1158) (symbol 1151 . 1157) (STRUCT 1144 . 1150) (punctuation 1142 . 1143) (punctuation 1141 . 1142) (TEMPLATE 1133 . 1141) (punctuation 1004 . 1005) (semantic-list 851 . 1004) (punctuation 849 . 850) (symbol 838 . 848) (punctuation 837 . 838) (punctuation 836 . 837) (symbol 828 . 836) (punctuation 827 . 828) (punctuation 826 . 827) (punctuation 824 . 825) (symbol 816 . 824) (STRUCT 809 . 815) (punctuation 807 . 808) (punctuation 806 . 807) (TEMPLATE 798 . 806) (punctuation 795 . 796) (semantic-list 629 . 795) (punctuation 627 . 628) (symbol 616 . 626) (punctuation 615 . 616) (punctuation 614 . 615) (symbol 606 . 614) (punctuation 605 . 606) (punctuation 604 . 605) (punctuation 602 . 603) (symbol 596 . 602) (STRUCT 589 . 595) (punctuation 587 . 588) (punctuation 586 . 587) (TEMPLATE 578 . 586))
+      :lexical-table 
+        '(("TF2_MSGS_MESSAGE_FRAMEGRAPH_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TF2_MSGS_MESSAGE_FRAMEGRAPHREQUEST_H" variable (:constant-flag t) nil [136 172])
+            ("string" include (:system-flag t) nil [175 192])
+            ("vector" include (:system-flag t) nil [193 210])
+            ("map" include (:system-flag t) nil [211 225])
+            ("ros/types.h" include (:system-flag t) nil [227 249])
+            ("ros/serialization.h" include (:system-flag t) nil [250 280])
+            ("ros/builtin_message_traits.h" include (:system-flag t) nil [281 320])
+            ("ros/message_operations.h" include (:system-flag t) nil [321 356])
+            ("tf2_msgs" type
+               (:members 
+                  ( ("FrameGraphRequest_" type
+                       (:template 
+                          ( ("ContainerAllocator" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("Type" type
+                               (:typedef ("FrameGraphRequest_" type
+                                     (:template-specifier 
+                                        ( ("ContainerAllocator" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [446 498])
+                            ("FrameGraphRequest_" function
+                               (:constructor-flag t
+                                :type ("FrameGraphRequest_" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [502 534])
+                            ("FrameGraphRequest_" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_alloc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ContainerAllocator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [556 589]))                                  
+                                :type ("FrameGraphRequest_" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [537 617])
+                            ("Ptr" variable (:type "int") (reparse-symbol classsubparts) [706 710])
+                            ("ConstPtr" variable (:type "int") (reparse-symbol classsubparts) [798 807]))                          )
+                        (reparse-symbol namespacesubparts) [380 811])
+                    ("FrameGraphRequest" variable (:type ("tf2_msgs::FrameGraphRequest_" type
+                         (:template-specifier 
+                            ( ("std::allocator" type (:template-specifier 
+                                ( ("void" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [852 922])
+                    ("FrameGraphRequestPtr" variable (:type "int") (reparse-symbol namespacesubparts) [983 1004])
+                    ("FrameGraphRequestConstPtr" variable (:type "int") (reparse-symbol namespacesubparts) [1069 1095])
+                    ("<<" function
+                       (:template 
+                          ( ("ContainerAllocator" type (:type "class") nil nil))                          
+                        :type ("std::ostream" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1209 1225])
+                            ("v" variable
+                               (:reference 1
+                                :type ("tf2_msgs::FrameGraphRequest_" type
+                                     (:template-specifier 
+                                        ( ("ContainerAllocator" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1234 1287]))                          
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1146 1407]))                  
+                :type "namespace")
+                nil [359 1410])
+            ("ros" type
+               (:members 
+                  ( ("message_traits" type
+                       (:members 
+                          ( ("TrueType" variable (:type "int") (reparse-symbol namespacesubparts) [2478 2493])
+                            ("TrueType" variable (:type "int") (reparse-symbol namespacesubparts) [2613 2628])
+                            ("TrueType" variable (:type "int") (reparse-symbol namespacesubparts) [2741 2756])
+                            ("TrueType" variable (:type "int") (reparse-symbol namespacesubparts) [2874 2889])
+                            ("FalseType" variable (:type "int") (reparse-symbol namespacesubparts) [3002 3018])
+                            ("FalseType" variable (:type "int") (reparse-symbol namespacesubparts) [3136 3152]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1450 4154]))                  
+                :type "namespace")
+                nil [1434 4184])
+            ("ros" type
+               (:members 
+                  ( ("serialization" type (:type "namespace") (reparse-symbol namespacesubparts) [4219 4521]))                  
+                :type "namespace")
+                nil [4203 4550])
+            ("ros" type
+               (:members 
+                  ( ("message_operations" type (:type "namespace") (reparse-symbol namespacesubparts) [4585 4868]))                  
+                :type "namespace")
+                nil [4569 4902]))          
+      :file "FrameGraphRequest.h"
+      :pointmax 4968
+      :fsize 4967
+      :lastmodtime '(22385 49622 0 0)
+      :unmatched-syntax '((punctuation 4864 . 4865) (semantic-list 4721 . 4864) (punctuation 4719 . 4720) (punctuation 4717 . 4718) (symbol 4699 . 4717) (punctuation 4698 . 4699) (symbol 4680 . 4698) (punctuation 4679 . 4680) (punctuation 4678 . 4679) (symbol 4670 . 4678) (punctuation 4669 . 4670) (punctuation 4668 . 4669) (punctuation 4666 . 4667) (symbol 4659 . 4666) (STRUCT 4652 . 4658) (punctuation 4650 . 4651) (symbol 4632 . 4650) (CLASS 4626 . 4631) (punctuation 4625 . 4626) (TEMPLATE 4617 . 4625) (punctuation 4488 . 4489) (semantic-list 4357 . 4488) (punctuation 4353 . 4354) (punctuation 4351 . 4352) (symbol 4333 . 4351) (punctuation 4332 . 4333) (symbol 4314 . 4332) (punctuation 4313 . 4314) (punctuation 4312 . 4313) (symbol 4304 . 4312) (punctuation 4303 . 4304) (punctuation 4302 . 4303) (punctuation 4300 . 4301) (symbol 4290 . 4300) (STRUCT 4283 . 4289) (punctuation 4281 . 4282) (symbol 4263 . 4281) (CLASS 4257 . 4262) (punctuation 4256 . 4257) (TEMPLATE 4248 . 4256) (punctuation 4150 . 4151) (semantic-list 3984 . 4150) (punctuation 3982 . 3983) (punctuation 3980 . 3981) (symbol 3962 . 3980) (punctuation 3961 . 3962) (symbol 3943 . 3961) (punctuation 3942 . 3943) (punctuation 3941 . 3942) (symbol 3933 . 3941) (punctuation 3932 . 3933) (punctuation 3931 . 3932) (punctuation 3929 . 3930) (symbol 3919 . 3929) (STRUCT 3912 . 3918) (punctuation 3910 . 3911) (symbol 3892 . 3910) (CLASS 3886 . 3891) (punctuation 3885 . 3886) (TEMPLATE 3877 . 3885) (punctuation 3874 . 3875) (semantic-list 3686 . 3874) (punctuation 3684 . 3685) (punctuation 3682 . 3683) (symbol 3664 . 3682) (punctuation 3663 . 3664) (symbol 3645 . 3663) (punctuation 3644 . 3645) (punctuation 3643 . 3644) (symbol 3635 . 3643) (punctuation 3634 . 3635) (punctuation 3633 . 3634) (punctuation 3631 . 3632) (symbol 3623 . 3631) (STRUCT 3616 . 3622) (punctuation 3614 . 3615) (symbol 3596 . 3614) (CLASS 3590 . 3595) (punctuation 3589 . 3590) (TEMPLATE 3581 . 3589) (punctuation 3578 . 3579) (semantic-list 3258 . 3578) (punctuation 3256 . 3257) (punctuation 3254 . 3255) (symbol 3236 . 3254) (punctuation 3235 . 3236) (symbol 3217 . 3235) (punctuation 3216 . 3217) (punctuation 3215 . 3216) (symbol 3207 . 3215) (punctuation 3206 . 3207) (punctuation 3205 . 3206) (punctuation 3203 . 3204) (symbol 3197 . 3203) (STRUCT 3190 . 3196) (punctuation 3188 . 3189) (symbol 3170 . 3188) (CLASS 3164 . 3169) (punctuation 3163 . 3164) (TEMPLATE 3155 . 3163) (punctuation 3134 . 3135) (punctuation 3130 . 3131) (CONST 3125 . 3130) (punctuation 3123 . 3124) (symbol 3105 . 3123) (punctuation 3104 . 3105) (symbol 3086 . 3104) (punctuation 3085 . 3086) (punctuation 3084 . 3085) (symbol 3076 . 3084) (punctuation 3075 . 3076) (punctuation 3074 . 3075) (punctuation 3072 . 3073) (symbol 3063 . 3072) (STRUCT 3056 . 3062) (punctuation 3054 . 3055) (symbol 3036 . 3054) (CLASS 3030 . 3035) (punctuation 3029 . 3030) (TEMPLATE 3020 . 3028) (punctuation 3000 . 3001) (punctuation 2996 . 2997) (punctuation 2994 . 2995) (symbol 2976 . 2994) (punctuation 2975 . 2976) (symbol 2957 . 2975) (punctuation 2956 . 2957) (punctuation 2955 . 2956) (symbol 2947 . 2955) (punctuation 2946 . 2947) (punctuation 2945 . 2946) (punctuation 2943 . 2944) (symbol 2934 . 2943) (STRUCT 2927 . 2933) (punctuation 2925 . 2926) (symbol 2907 . 2925) (CLASS 2901 . 2906) (punctuation 2900 . 2901) (TEMPLATE 2891 . 2899) (punctuation 2872 . 2873) (punctuation 2868 . 2869) (CONST 2863 . 2868) (punctuation 2861 . 2862) (symbol 2843 . 2861) (punctuation 2842 . 2843) (symbol 2824 . 2842) (punctuation 2823 . 2824) (punctuation 2822 . 2823) (symbol 2814 . 2822) (punctuation 2813 . 2814) (punctuation 2812 . 2813) (punctuation 2810 . 2811) (symbol 2801 . 2810) (STRUCT 2794 . 2800) (punctuation 2792 . 2793) (symbol 2774 . 2792) (CLASS 2768 . 2773) (punctuation 2767 . 2768) (TEMPLATE 2758 . 2766) (punctuation 2739 . 2740) (punctuation 2735 . 2736) (punctuation 2733 . 2734) (symbol 2715 . 2733) (punctuation 2714 . 2715) (symbol 2696 . 2714) (punctuation 2695 . 2696) (punctuation 2694 . 2695) (symbol 2686 . 2694) (punctuation 2685 . 2686) (punctuation 2684 . 2685) (punctuation 2682 . 2683) (symbol 2673 . 2682) (STRUCT 2666 . 2672) (punctuation 2664 . 2665) (symbol 2646 . 2664) (CLASS 2640 . 2645) (punctuation 2639 . 2640) (TEMPLATE 2630 . 2638) (punctuation 2611 . 2612) (punctuation 2607 . 2608) (CONST 2602 . 2607) (punctuation 2600 . 2601) (symbol 2582 . 2600) (punctuation 2581 . 2582) (symbol 2563 . 2581) (punctuation 2562 . 2563) (punctuation 2561 . 2562) (symbol 2553 . 2561) (punctuation 2552 . 2553) (punctuation 2551 . 2552) (punctuation 2549 . 2550) (symbol 2538 . 2549) (STRUCT 2531 . 2537) (punctuation 2529 . 2530) (symbol 2511 . 2529) (CLASS 2505 . 2510) (punctuation 2504 . 2505) (TEMPLATE 2495 . 2503) (punctuation 2476 . 2477) (punctuation 2472 . 2473) (punctuation 2470 . 2471) (symbol 2452 . 2470) (punctuation 2451 . 2452) (symbol 2433 . 2451) (punctuation 2432 . 2433) (punctuation 2431 . 2432) (symbol 2423 . 2431) (punctuation 2422 . 2423) (punctuation 2421 . 2422) (punctuation 2419 . 2420) (symbol 2408 . 2419) (STRUCT 2401 . 2407) (punctuation 2399 . 2400) (symbol 2381 . 2399) (CLASS 2375 . 2380) (punctuation 2374 . 2375) (TEMPLATE 2365 . 2373) (punctuation 1233 . 1234) (punctuation 1232 . 1233) (CONST 1226 . 1231) (punctuation 1067 . 1068) (CONST 1062 . 1067) (symbol 1044 . 1061) (punctuation 1043 . 1044) (punctuation 1042 . 1043) (symbol 1034 . 1042) (punctuation 1033 . 1034) (punctuation 1032 . 1033) (punctuation 1030 . 1031) (symbol 1020 . 1030) (punctuation 1019 . 1020) (punctuation 1018 . 1019) (symbol 1013 . 1018) (TYPEDEF 1005 . 1012) (punctuation 981 . 982) (symbol 963 . 980) (punctuation 962 . 963) (punctuation 961 . 962) (symbol 953 . 961) (punctuation 952 . 953) (punctuation 951 . 952) (punctuation 949 . 950) (symbol 939 . 949) (punctuation 938 . 939) (punctuation 937 . 938) (symbol 932 . 937) (TYPEDEF 924 . 931) (punctuation 851 . 852) (punctuation 850 . 851) (TYPEDEF 842 . 849) (punctuation 796 . 797) (CONST 791 . 796) (punctuation 789 . 790) (symbol 771 . 789) (punctuation 770 . 771) (symbol 752 . 770) (punctuation 751 . 752) (punctuation 750 . 751) (symbol 742 . 750) (punctuation 741 . 742) (punctuation 740 . 741) (punctuation 738 . 739) (symbol 728 . 738) (punctuation 727 . 728) (punctuation 726 . 727) (symbol 721 . 726) (TYPEDEF 713 . 720) (punctuation 704 . 705) (punctuation 702 . 703) (symbol 684 . 702) (punctuation 683 . 684) (symbol 665 . 683) (punctuation 664 . 665) (punctuation 663 . 664) (symbol 655 . 663) (punctuation 654 . 655) (punctuation 653 . 654) (punctuation 651 . 652) (symbol 641 . 651) (punctuation 640 . 641) (punctuation 639 . 640) (symbol 634 . 639) (TYPEDEF 626 . 633))
+      :lexical-table 
+        '(("TF2_MSGS_MESSAGE_FRAMEGRAPHREQUEST_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("TF2_MSGS_MESSAGE_FRAMEGRAPHRESPONSE_H" variable (:constant-flag t) nil [138 175])
+            ("string" include (:system-flag t) nil [178 195])
+            ("vector" include (:system-flag t) nil [196 213])
+            ("map" include (:system-flag t) nil [214 228])
+            ("ros/types.h" include (:system-flag t) nil [230 252])
+            ("ros/serialization.h" include (:system-flag t) nil [253 283])
+            ("ros/builtin_message_traits.h" include (:system-flag t) nil [284 323])
+            ("ros/message_operations.h" include (:system-flag t) nil [324 359])
+            ("tf2_msgs" type
+               (:members 
+                  ( ("FrameGraphResponse_" type
+                       (:template 
+                          ( ("ContainerAllocator" type (:type "class") nil nil))                          
+                        :type "struct"
+                        :members 
+                          ( ("Type" type
+                               (:typedef ("FrameGraphResponse_" type
+                                     (:template-specifier 
+                                        ( ("ContainerAllocator" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [450 503])
+                            ("FrameGraphResponse_" function
+                               (:constructor-flag t
+                                :type ("FrameGraphResponse_" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [507 556])
+                            ("FrameGraphResponse_" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("_alloc" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ContainerAllocator" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [579 612]))                                  
+                                :type ("FrameGraphResponse_" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [559 662])
+                            ("_frame_yaml_type" variable (:type "int") (reparse-symbol classsubparts) [786 803])
+                            ("frame_yaml" variable (:type ("_frame_yaml_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [806 834])
+                            ("Ptr" variable (:type "int") (reparse-symbol classsubparts) [922 926])
+                            ("ConstPtr" variable (:type "int") (reparse-symbol classsubparts) [1015 1024]))                          )
+                        (reparse-symbol namespacesubparts) [383 1028])
+                    ("FrameGraphResponse" variable (:type ("tf2_msgs::FrameGraphResponse_" type
+                         (:template-specifier 
+                            ( ("std::allocator" type (:template-specifier 
+                                ( ("void" type nil nil nil))                                ) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1070 1142])
+                    ("FrameGraphResponsePtr" variable (:type "int") (reparse-symbol namespacesubparts) [1204 1226])
+                    ("FrameGraphResponseConstPtr" variable (:type "int") (reparse-symbol namespacesubparts) [1292 1319])
+                    ("<<" function
+                       (:template 
+                          ( ("ContainerAllocator" type (:type "class") nil nil))                          
+                        :type ("std::ostream" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("s" variable
+                               (:reference 1
+                                :type ("std::ostream" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1433 1449])
+                            ("v" variable
+                               (:reference 1
+                                :type ("tf2_msgs::FrameGraphResponse_" type
+                                     (:template-specifier 
+                                        ( ("ContainerAllocator" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1458 1512]))                          
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [1370 1633]))                  
+                :type "namespace")
+                nil [362 1636])
+            ("ros" type
+               (:members 
+                  ( ("message_traits" type
+                       (:members 
+                          ( ("FalseType" variable (:type "int") (reparse-symbol namespacesubparts) [2706 2722])
+                            ("FalseType" variable (:type "int") (reparse-symbol namespacesubparts) [2843 2859])
+                            ("TrueType" variable (:type "int") (reparse-symbol namespacesubparts) [2973 2988])
+                            ("TrueType" variable (:type "int") (reparse-symbol namespacesubparts) [3107 3122])
+                            ("FalseType" variable (:type "int") (reparse-symbol namespacesubparts) [3236 3252])
+                            ("FalseType" variable (:type "int") (reparse-symbol namespacesubparts) [3371 3387]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1676 4417]))                  
+                :type "namespace")
+                nil [1660 4447])
+            ("ros" type
+               (:members 
+                  ( ("serialization" type (:type "namespace") (reparse-symbol namespacesubparts) [4482 4833]))                  
+                :type "namespace")
+                nil [4466 4862])
+            ("ros" type
+               (:members 
+                  ( ("message_operations" type (:type "namespace") (reparse-symbol namespacesubparts) [4897 5394]))                  
+                :type "namespace")
+                nil [4881 5428]))          
+      :file "FrameGraphResponse.h"
+      :pointmax 5495
+      :fsize 5494
+      :lastmodtime '(22385 49623 0 0)
+      :unmatched-syntax '((punctuation 5390 . 5391) (semantic-list 5034 . 5390) (punctuation 5032 . 5033) (punctuation 5030 . 5031) (symbol 5012 . 5030) (punctuation 5011 . 5012) (symbol 4992 . 5011) (punctuation 4991 . 4992) (punctuation 4990 . 4991) (symbol 4982 . 4990) (punctuation 4981 . 4982) (punctuation 4980 . 4981) (punctuation 4978 . 4979) (symbol 4971 . 4978) (STRUCT 4964 . 4970) (punctuation 4962 . 4963) (symbol 4944 . 4962) (CLASS 4938 . 4943) (punctuation 4937 . 4938) (TEMPLATE 4929 . 4937) (punctuation 4799 . 4800) (semantic-list 4621 . 4799) (punctuation 4617 . 4618) (punctuation 4615 . 4616) (symbol 4597 . 4615) (punctuation 4596 . 4597) (symbol 4577 . 4596) (punctuation 4576 . 4577) (punctuation 4575 . 4576) (symbol 4567 . 4575) (punctuation 4566 . 4567) (punctuation 4565 . 4566) (punctuation 4563 . 4564) (symbol 4553 . 4563) (STRUCT 4546 . 4552) (punctuation 4544 . 4545) (symbol 4526 . 4544) (CLASS 4520 . 4525) (punctuation 4519 . 4520) (TEMPLATE 4511 . 4519) (punctuation 4413 . 4414) (semantic-list 4225 . 4413) (punctuation 4223 . 4224) (punctuation 4221 . 4222) (symbol 4203 . 4221) (punctuation 4202 . 4203) (symbol 4183 . 4202) (punctuation 4182 . 4183) (punctuation 4181 . 4182) (symbol 4173 . 4181) (punctuation 4172 . 4173) (punctuation 4171 . 4172) (punctuation 4169 . 4170) (symbol 4159 . 4169) (STRUCT 4152 . 4158) (punctuation 4150 . 4151) (symbol 4132 . 4150) (CLASS 4126 . 4131) (punctuation 4125 . 4126) (TEMPLATE 4117 . 4125) (punctuation 4114 . 4115) (semantic-list 3924 . 4114) (punctuation 3922 . 3923) (punctuation 3920 . 3921) (symbol 3902 . 3920) (punctuation 3901 . 3902) (symbol 3882 . 3901) (punctuation 3881 . 3882) (punctuation 3880 . 3881) (symbol 3872 . 3880) (punctuation 3871 . 3872) (punctuation 3870 . 3871) (punctuation 3868 . 3869) (symbol 3860 . 3868) (STRUCT 3853 . 3859) (punctuation 3851 . 3852) (symbol 3833 . 3851) (CLASS 3827 . 3832) (punctuation 3826 . 3827) (TEMPLATE 3818 . 3826) (punctuation 3815 . 3816) (semantic-list 3494 . 3815) (punctuation 3492 . 3493) (punctuation 3490 . 3491) (symbol 3472 . 3490) (punctuation 3471 . 3472) (symbol 3452 . 3471) (punctuation 3451 . 3452) (punctuation 3450 . 3451) (symbol 3442 . 3450) (punctuation 3441 . 3442) (punctuation 3440 . 3441) (punctuation 3438 . 3439) (symbol 3432 . 3438) (STRUCT 3425 . 3431) (punctuation 3423 . 3424) (symbol 3405 . 3423) (CLASS 3399 . 3404) (punctuation 3398 . 3399) (TEMPLATE 3390 . 3398) (punctuation 3369 . 3370) (punctuation 3365 . 3366) (CONST 3360 . 3365) (punctuation 3358 . 3359) (symbol 3340 . 3358) (punctuation 3339 . 3340) (symbol 3320 . 3339) (punctuation 3319 . 3320) (punctuation 3318 . 3319) (symbol 3310 . 3318) (punctuation 3309 . 3310) (punctuation 3308 . 3309) (punctuation 3306 . 3307) (symbol 3297 . 3306) (STRUCT 3290 . 3296) (punctuation 3288 . 3289) (symbol 3270 . 3288) (CLASS 3264 . 3269) (punctuation 3263 . 3264) (TEMPLATE 3254 . 3262) (punctuation 3234 . 3235) (punctuation 3230 . 3231) (punctuation 3228 . 3229) (symbol 3210 . 3228) (punctuation 3209 . 3210) (symbol 3190 . 3209) (punctuation 3189 . 3190) (punctuation 3188 . 3189) (symbol 3180 . 3188) (punctuation 3179 . 3180) (punctuation 3178 . 3179) (punctuation 3176 . 3177) (symbol 3167 . 3176) (STRUCT 3160 . 3166) (punctuation 3158 . 3159) (symbol 3140 . 3158) (CLASS 3134 . 3139) (punctuation 3133 . 3134) (TEMPLATE 3124 . 3132) (punctuation 3105 . 3106) (punctuation 3101 . 3102) (CONST 3096 . 3101) (punctuation 3094 . 3095) (symbol 3076 . 3094) (punctuation 3075 . 3076) (symbol 3056 . 3075) (punctuation 3055 . 3056) (punctuation 3054 . 3055) (symbol 3046 . 3054) (punctuation 3045 . 3046) (punctuation 3044 . 3045) (punctuation 3042 . 3043) (symbol 3033 . 3042) (STRUCT 3026 . 3032) (punctuation 3024 . 3025) (symbol 3006 . 3024) (CLASS 3000 . 3005) (punctuation 2999 . 3000) (TEMPLATE 2990 . 2998) (punctuation 2971 . 2972) (punctuation 2967 . 2968) (punctuation 2965 . 2966) (symbol 2947 . 2965) (punctuation 2946 . 2947) (symbol 2927 . 2946) (punctuation 2926 . 2927) (punctuation 2925 . 2926) (symbol 2917 . 2925) (punctuation 2916 . 2917) (punctuation 2915 . 2916) (punctuation 2913 . 2914) (symbol 2904 . 2913) (STRUCT 2897 . 2903) (punctuation 2895 . 2896) (symbol 2877 . 2895) (CLASS 2871 . 2876) (punctuation 2870 . 2871) (TEMPLATE 2861 . 2869) (punctuation 2841 . 2842) (punctuation 2837 . 2838) (CONST 2832 . 2837) (punctuation 2830 . 2831) (symbol 2812 . 2830) (punctuation 2811 . 2812) (symbol 2792 . 2811) (punctuation 2791 . 2792) (punctuation 2790 . 2791) (symbol 2782 . 2790) (punctuation 2781 . 2782) (punctuation 2780 . 2781) (punctuation 2778 . 2779) (symbol 2767 . 2778) (STRUCT 2760 . 2766) (punctuation 2758 . 2759) (symbol 2740 . 2758) (CLASS 2734 . 2739) (punctuation 2733 . 2734) (TEMPLATE 2724 . 2732) (punctuation 2704 . 2705) (punctuation 2700 . 2701) (punctuation 2698 . 2699) (symbol 2680 . 2698) (punctuation 2679 . 2680) (symbol 2660 . 2679) (punctuation 2659 . 2660) (punctuation 2658 . 2659) (symbol 2650 . 2658) (punctuation 2649 . 2650) (punctuation 2648 . 2649) (punctuation 2646 . 2647) (symbol 2635 . 2646) (STRUCT 2628 . 2634) (punctuation 2626 . 2627) (symbol 2608 . 2626) (CLASS 2602 . 2607) (punctuation 2601 . 2602) (TEMPLATE 2592 . 2600) (punctuation 1457 . 1458) (punctuation 1456 . 1457) (CONST 1450 . 1455) (punctuation 1290 . 1291) (CONST 1285 . 1290) (symbol 1266 . 1284) (punctuation 1265 . 1266) (punctuation 1264 . 1265) (symbol 1256 . 1264) (punctuation 1255 . 1256) (punctuation 1254 . 1255) (punctuation 1252 . 1253) (symbol 1242 . 1252) (punctuation 1241 . 1242) (punctuation 1240 . 1241) (symbol 1235 . 1240) (TYPEDEF 1227 . 1234) (punctuation 1202 . 1203) (symbol 1183 . 1201) (punctuation 1182 . 1183) (punctuation 1181 . 1182) (symbol 1173 . 1181) (punctuation 1172 . 1173) (punctuation 1171 . 1172) (punctuation 1169 . 1170) (symbol 1159 . 1169) (punctuation 1158 . 1159) (punctuation 1157 . 1158) (symbol 1152 . 1157) (TYPEDEF 1144 . 1151) (punctuation 1069 . 1070) (punctuation 1068 . 1069) (TYPEDEF 1060 . 1067) (punctuation 1013 . 1014) (CONST 1008 . 1013) (punctuation 1006 . 1007) (symbol 988 . 1006) (punctuation 987 . 988) (symbol 968 . 987) (punctuation 967 . 968) (punctuation 966 . 967) (symbol 958 . 966) (punctuation 957 . 958) (punctuation 956 . 957) (punctuation 954 . 955) (symbol 944 . 954) (punctuation 943 . 944) (punctuation 942 . 943) (symbol 937 . 942) (TYPEDEF 929 . 936) (punctuation 920 . 921) (punctuation 918 . 919) (symbol 900 . 918) (punctuation 899 . 900) (symbol 880 . 899) (punctuation 879 . 880) (punctuation 878 . 879) (symbol 870 . 878) (punctuation 869 . 870) (punctuation 868 . 869) (punctuation 866 . 867) (symbol 856 . 866) (punctuation 855 . 856) (punctuation 854 . 855) (symbol 849 . 854) (TYPEDEF 841 . 848) (punctuation 783 . 784) (symbol 777 . 782) (punctuation 776 . 777) (punctuation 775 . 776) (punctuation 774 . 775) (CHAR 770 . 774) (punctuation 769 . 770) (symbol 763 . 769) (TEMPLATE 754 . 762) (punctuation 753 . 754) (punctuation 752 . 753) (symbol 734 . 752) (TYPENAME 725 . 733) (punctuation 723 . 724) (punctuation 722 . 723) (CHAR 718 . 722) (punctuation 717 . 718) (symbol 706 . 717) (punctuation 705 . 706) (punctuation 704 . 705) (symbol 701 . 704) (punctuation 699 . 700) (CHAR 695 . 699) (punctuation 694 . 695) (symbol 682 . 694) (punctuation 681 . 682) (punctuation 680 . 681) (symbol 677 . 680) (TYPEDEF 669 . 676))
+      :lexical-table 
+        '(("TF2_MSGS_MESSAGE_FRAMEGRAPHRESPONSE_H")
+          )
+))
+  :file "!opt!ros!indigo!include!tf2_msgs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

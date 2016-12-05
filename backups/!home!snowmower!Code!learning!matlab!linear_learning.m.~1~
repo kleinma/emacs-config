@@ -1,0 +1,15 @@
+m = 7;
+
+sigma = 3;
+
+n = 100;
+
+x = 50*rand(1,n);
+y = NaN(size(x));
+
+for i = 1:100
+    y(i) = m*x(i) + randn(0,sigma);
+end
+
+figure(1)
+plot(x,y,'.r')

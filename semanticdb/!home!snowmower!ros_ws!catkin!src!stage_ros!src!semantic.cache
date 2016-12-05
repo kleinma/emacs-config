@@ -1,0 +1,466 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [841 859])
+            ("stdlib.h" include (:system-flag t) nil [860 879])
+            ("string.h" include (:system-flag t) nil [880 899])
+            ("sys/types.h" include (:system-flag t) nil [901 923])
+            ("sys/stat.h" include (:system-flag t) nil [924 945])
+            ("unistd.h" include (:system-flag t) nil [946 965])
+            ("signal.h" include (:system-flag t) nil [966 985])
+            ("stage.hh" include (:system-flag t) nil [1000 1019])
+            ("ros/ros.h" include (:system-flag t) nil [1031 1051])
+            ("boost/thread/mutex.hpp" include (:system-flag t) nil [1052 1085])
+            ("boost/thread/thread.hpp" include (:system-flag t) nil [1086 1120])
+            ("sensor_msgs/LaserScan.h" include (:system-flag t) nil [1121 1155])
+            ("sensor_msgs/Image.h" include (:system-flag t) nil [1156 1186])
+            ("sensor_msgs/image_encodings.h" include (:system-flag t) nil [1187 1227])
+            ("sensor_msgs/CameraInfo.h" include (:system-flag t) nil [1228 1263])
+            ("nav_msgs/Odometry.h" include (:system-flag t) nil [1264 1294])
+            ("geometry_msgs/Twist.h" include (:system-flag t) nil [1295 1327])
+            ("rosgraph_msgs/Clock.h" include (:system-flag t) nil [1328 1360])
+            ("geometry_msgs/Pose2D.h" include (:system-flag t) nil [1361 1394])
+            ("std_srvs/Empty.h" include (:system-flag t) nil [1396 1423])
+            ("tf/transform_broadcaster.h" include nil nil [1425 1462])
+            ("USAGE" variable (:constant-flag t) nil [1472 1477])
+            ("IMAGE" variable (:constant-flag t) nil [1509 1514])
+            ("DEPTH" variable (:constant-flag t) nil [1531 1536])
+            ("CAMERA_INFO" variable (:constant-flag t) nil [1553 1564])
+            ("ODOM" variable (:constant-flag t) nil [1587 1591])
+            ("BASE_SCAN" variable (:constant-flag t) nil [1607 1616])
+            ("BASE_POSE_GROUND_TRUTH" variable (:constant-flag t) nil [1637 1659])
+            ("CMD_VEL" variable (:constant-flag t) nil [1693 1700])
+            ("CMD_POSE" variable (:constant-flag t) nil [1719 1727])
+            ("CMD_SIZE" variable (:constant-flag t) nil [1747 1755])
+            ("StageNode" type
+               (:members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [1798 1806])
+                    ("n_" variable (:type ("ros::NodeHandle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1846 1865])
+                    ("msg_lock" variable (:type ("boost::mutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1946 1968])
+                    ("cameramodels" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Stg::ModelCamera" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2017 2062])
+                    ("lasermodels" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Stg::ModelRanger" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2067 2111])
+                    ("positionmodels" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Stg::ModelPosition" type (:pointer 1) nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [2116 2165])
+                    ("StageRobot" type
+                       (:members 
+                          ( ("positionmodel" variable
+                               (:pointer 1
+                                :type ("Stg::ModelPosition" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2289 2323])
+                            ("cameramodels" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("Stg::ModelCamera" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2347 2392])
+                            ("lasermodels" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("Stg::ModelRanger" type (:pointer 1) nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2433 2477])
+                            ("odom_pub" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2544 2568])
+                            ("ground_truth_pub" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2588 2620])
+                            ("image_pubs" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("ros::Publisher" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2649 2688])
+                            ("depth_pubs" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("ros::Publisher" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2715 2754])
+                            ("camera_pubs" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("ros::Publisher" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2781 2821])
+                            ("laser_pubs" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("ros::Publisher" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2849 2888])
+                            ("cmdvel_sub" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2916 2943])
+                            ("cmdpose_sub" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2977 3005])
+                            ("cmdsize_sub" variable (:type ("ros::Subscriber" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3035 3063]))                          
+                        :type "struct")
+                        (reparse-symbol classsubparts) [2226 3091])
+                    ("robotmodels_" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("StageRobot" type
+                                 (:pointer 1
+                                  :constant-flag t)
+                                  nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3097 3142])
+                    ("initial_poses" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Stg::Pose" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [3201 3238])
+                    ("reset_srv_" variable (:type ("ros::ServiceServer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3243 3273])
+                    ("clock_pub_" variable (:type ("ros::Publisher" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3281 3307])
+                    ("isDepthCanonical" variable (:type "bool") (reparse-symbol classsubparts) [3317 3339])
+                    ("use_model_names" variable (:type "bool") (reparse-symbol classsubparts) [3344 3365])
+                    ("ghfunc" function
+                       (:prototype-flag t
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("mod" variable
+                               (:pointer 1
+                                :type ("Stg::Model" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3506 3522])
+                            ("node" variable
+                               (:pointer 1
+                                :type ("StageNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3523 3539]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3487 3540])
+                    ("s_update" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("world" variable
+                               (:pointer 1
+                                :type ("Stg::World" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3567 3585])
+                            ("node" variable
+                               (:pointer 1
+                                :type ("StageNode" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3586 3602]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [3546 3807])
+                    ("mapName" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [3969 3986])
+                            ("robotID" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3987 4002])
+                            ("mod" variable
+                               (:pointer 1
+                                :type ("Stg::Model" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4003 4019]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [3949 4026])
+                    ("mapName" function
+                       (:prototype-flag t
+                        :methodconst-flag t
+                        :pointer 1
+                        :constant-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4051 4068])
+                            ("robotID" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4069 4084])
+                            ("deviceID" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4085 4101])
+                            ("mod" variable
+                               (:pointer 1
+                                :type ("Stg::Model" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4102 4118]))                          
+                        :type "char")
+                        (reparse-symbol classsubparts) [4031 4125])
+                    ("tf" variable (:type ("tf::TransformBroadcaster" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4131 4159])
+                    ("base_last_cmd" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4218 4242])
+                    ("base_watchdog_timeout" variable (:type ("ros::Duration" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4247 4283])
+                    ("sim_time" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4320 4339])
+                    ("base_last_globalpos_time" variable (:type ("ros::Time" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4419 4454])
+                    ("base_last_globalpos" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("Stg::Pose" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [4507 4550])
+                    ("public" label nil (reparse-symbol classsubparts) [4552 4559])
+                    ("StageNode" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4681 4690])
+                            ("argv" variable
+                               (:pointer 2
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4691 4703])
+                            ("gui" variable (:type "bool") (reparse-symbol arg-sub-list) [4704 4713])
+                            ("fname" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [4714 4732])
+                            ("use_model_names" variable (:type "bool") (reparse-symbol arg-sub-list) [4733 4754]))                          
+                        :type ("StageNode" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4671 4755])
+                    ("StageNode" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [4760 4773])
+                    ("SubscribeModels" function
+                       (:prototype-flag t
+                        :type "int")
+                        (reparse-symbol classsubparts) [4988 5010])
+                    ("WorldCallback" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [5036 5057])
+                    ("UpdateWorld" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5165 5184])
+                    ("cmdvelReceived" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [5282 5290])
+                            ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("geometry_msgs::Twist" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5291 5348]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5262 5349])
+                    ("cmdposeReceived" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [5439 5447])
+                            ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("geometry_msgs::Pose2D" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5448 5506]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5418 5507])
+                    ("cmdsizeReceived" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [5598 5606])
+                            ("msg" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("boost::shared_ptr" type
+                                     (:template-specifier 
+                                        ( ("geometry_msgs::Vector3" type (:constant-flag t) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5607 5666]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5577 5667])
+                    ("cb_reset_srv" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("request" variable
+                               (:reference 1
+                                :type ("std_srvs::Empty::Request" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5730 5764])
+                            ("response" variable
+                               (:reference 1
+                                :type ("std_srvs::Empty::Response" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5765 5801]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5712 5802])
+                    ("world" variable
+                       (:pointer 1
+                        :type ("Stg::World" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5841 5859]))                  
+                :type "class")
+                nil [1780 5862])
+            ("mapName" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "StageNode"
+                :constant-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5971 5988])
+                    ("robotID" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5989 6004])
+                    ("mod" variable
+                       (:pointer 1
+                        :type ("Stg::Model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6005 6021]))                  
+                :type "char")
+                nil [5939 6624])
+            ("mapName" function
+               (:methodconst-flag t
+                :pointer 1
+                :parent "StageNode"
+                :constant-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6658 6675])
+                    ("robotID" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6676 6691])
+                    ("deviceID" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6692 6708])
+                    ("mod" variable
+                       (:pointer 1
+                        :type ("Stg::Model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6709 6725]))                  
+                :type "char")
+                nil [6626 7513])
+            ("ghfunc" function
+               (:parent "StageNode"
+                :arguments 
+                  ( ("mod" variable
+                       (:pointer 1
+                        :type ("Stg::Model" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7538 7554])
+                    ("node" variable
+                       (:pointer 1
+                        :type ("StageNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7555 7571]))                  
+                :type "void")
+                nil [7515 8081])
+            ("cb_reset_srv" function
+               (:parent "StageNode"
+                :arguments 
+                  ( ("request" variable
+                       (:reference 1
+                        :type ("std_srvs::Empty::Request" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8115 8149])
+                    ("response" variable
+                       (:reference 1
+                        :type ("std_srvs::Empty::Response" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8150 8186]))                  
+                :type "bool")
+                nil [8086 8410])
+            ("cmdvelReceived" function
+               (:parent "StageNode"
+                :arguments 
+                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [8445 8453])
+                    ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("geometry_msgs::Twist" type (:constant-flag t) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8454 8511]))                  
+                :type "void")
+                nil [8414 8770])
+            ("cmdposeReceived" function
+               (:parent "StageNode"
+                :arguments 
+                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [8804 8812])
+                    ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("geometry_msgs::Pose2D" type (:constant-flag t) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8813 8871]))                  
+                :type "void")
+                nil [8772 9055])
+            ("cmdsizeReceived" function
+               (:parent "StageNode"
+                :arguments 
+                  ( ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [9089 9097])
+                    ("msg" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("boost::shared_ptr" type
+                             (:template-specifier 
+                                ( ("geometry_msgs::Vector3" type (:constant-flag t) nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9098 9158]))                  
+                :type "void")
+                nil [9057 9452])
+            ("StageNode" function
+               (:constructor-flag t
+                :parent "StageNode"
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9475 9484])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9485 9497])
+                    ("gui" variable (:type "bool") (reparse-symbol arg-sub-list) [9498 9507])
+                    ("fname" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9508 9526])
+                    ("use_model_names" variable (:type "bool") (reparse-symbol arg-sub-list) [9527 9548]))                  
+                :type ("StageNode" type (:type "class") nil nil))
+                nil [9454 10945])
+            ("SubscribeModels" function
+               (:parent "StageNode"
+                :type "int")
+                nil [11265 15244])
+            ("StageNode" function
+               (:destructor-flag t
+                :parent "StageNode"
+                :type "void")
+                nil [15246 15414])
+            ("UpdateWorld" function
+               (:parent "StageNode"
+                :type ("sbool" type (:type "class") nil nil))
+                nil [15416 15486])
+            ("WorldCallback" function
+               (:parent "StageNode"
+                :type "void")
+                nil [15488 32143])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [32155 32164])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [32165 32177]))                  
+                :type "int")
+                nil [32145 33333]))          
+      :file "stageros.cpp"
+      :pointmax 33335
+      :fsize 33334
+      :lastmodtime '(22587 34911 293649 477000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DEPTH" . ((string "\"depth\"" 1537 . 1544)))
+          ("ODOM" . ((string "\"odom\"" 1592 . 1598)))
+          ("BASE_POSE_GROUND_TRUTH" . ((string "\"base_pose_ground_truth\"" 1660 . 1684)))
+          ("CMD_SIZE" . ((string "\"cmd_size\"" 1756 . 1766)))
+          ("IMAGE" . ((string "\"image\"" 1515 . 1522)))
+          ("BASE_SCAN" . ((string "\"base_scan\"" 1617 . 1628)))
+          ("USAGE" . ((string "\"stageros <worldfile>\"" 1478 . 1500)))
+          ("CMD_POSE" . ((string "\"cmd_pose\"" 1728 . 1738)))
+          ("CAMERA_INFO" . ((string "\"camera_info\"" 1565 . 1578)))
+          ("CMD_VEL" . ((string "\"cmd_vel\"" 1701 . 1710)))
+          )
+))
+  :file "!home!snowmower!ros_ws!catkin!src!stage_ros!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,19 @@
+;; Object emacs_tutorial/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "emacs_tutorial/"
+  :tables (list 
+   (semanticdb-table "hello_world.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("print" code nil nil [24 55]))          
+    :file "hello_world.py"
+    :pointmax 57
+    :fsize 56
+    :lastmodtime '(22592 38649 777895 879000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!snowmower!Desktop!emacs_tutorial!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

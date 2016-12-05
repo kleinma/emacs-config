@@ -1,0 +1,14 @@
+define robot position
+(
+  size( 1 1 1)
+
+  block
+  (
+    points 4
+    points[3] [0 0]
+    points[2] [0 1]
+    points[1] [1 1]
+    points[0] [1 0]
+    z [0 1]
+  )
+0
