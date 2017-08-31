@@ -86,6 +86,7 @@
 (add-to-list 'auto-mode-alist '("makefile$" . makefile-mode))
 (add-to-list 'auto-mode-alist '("Makefile$" . makefile-mode))
 (add-to-list 'auto-mode-alist '("\\.launch" . xml-mode))
+(add-to-list 'auto-mode-alist '("\\.urdf" . xml-mode))
 
 (autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
