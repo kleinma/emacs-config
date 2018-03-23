@@ -88,6 +88,13 @@
 (add-to-list 'auto-mode-alist '("\\.launch" . xml-mode))
 (add-to-list 'auto-mode-alist '("\\.urdf" . xml-mode))
 
+; Add cmake listfile names to the mode list.
+(setq auto-mode-alist
+      (append
+       '(("CMakeLists\\.txt\\'" . cmake-mode))
+       '(("\\.cmake\\'". cmake-mode))
+       auto-mode-alist))
+
 (autoload 'markdown-mode "markdown-mode" "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
