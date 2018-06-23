@@ -14,6 +14,7 @@
 (setq use-package-always-ensure t)
 
 (add-to-list 'load-path "~/.emacs.d/custom")
+(add-to-list 'load-path "~/.emacs.d/share/emacs/")
 
 (require 'setup-general)
 (if (version< emacs-version "24.4")
