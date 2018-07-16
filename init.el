@@ -14,7 +14,7 @@
 (setq use-package-always-ensure t)
 
 (add-to-list 'load-path "~/.emacs.d/custom")
-(add-to-list 'load-path "~/.emacs.d/share/emacs/")
+(add-to-list 'load-path "~/.emacs.d/share/emacs/site-lisp")
 
 (require 'setup-general)
 (if (version< emacs-version "24.4")
@@ -127,3 +127,10 @@
 ; Change the default font-size for the gui
 (set-face-attribute 'default nil :height 110)
 (put 'narrow-to-region 'disabled nil)
+
+(require 'doxymacs)
+(add-hook 'c-mode-common-hook 'doxymacs-mode)
+(defun my-doxymacs-font-lock-hook ()
+  (if (or (eq major-mode 'c-mode) (eq major-mode 'c++-mode))
+      (doxymacs-font-lock)))
+(add-hook 'font-lock-mode-hook 'my-doxymacs-font-lock-hook)
